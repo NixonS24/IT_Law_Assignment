@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root product-version="12.2.7.797">
+  <entities>
+    <entity ref="global">
+      <attribute name="82c025bf-7bcc-4adb-aad0-166d19d49740" type="boolean" validation-message="Invalid value.">
+        <text>
+          <base>the supply is of residential premises</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of residential premises'))</parse>
+        </text>
+      </attribute>
+    </entity>
+    <entity id="4a6e9b91-6722-4473-b6d6-5d3ec999fe39" name="the new entity" identifying-attribute-name="93bb5142-a60f-4e5f-aab4-19e25031cc63" containment-relationship-id="043ac20b-67ee-4762-8873-d29100424ef1" containment-parent-id="global">
+      <attribute name="93bb5142-a60f-4e5f-aab4-19e25031cc63" type="text" public-name="new_entity" substitutable="true" default-gender="Generic" user-created="true">
+        <text>
+          <base>the new entity</base>
+        </text>
+      </attribute>
+    </entity>
+  </entities>
+  <relationships>
+    <relationship relationship-id="043ac20b-67ee-4762-8873-d29100424ef1" reverse-relationship-id="71170b9a-0c28-40c1-b97e-f6c10b7a9cb2" source="global" target="4a6e9b91-6722-4473-b6d6-5d3ec999fe39" is-containment="true" public-id="" reverse-public-id="" text="all instances of the new entity" reverse-text="" type="OneToMany" is-computed="false" silent-if-known="true" invisible-if-known="true" />
+  </relationships>
+</root>
