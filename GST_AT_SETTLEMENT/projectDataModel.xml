@@ -116,6 +116,37 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of commercial residential premises'))</parse>
         </text>
       </attribute>
+      <attribute name="dfc29478-de1f-4116-91b8-2f4f94b1913a" type="text" validation-message="Invalid value." regexp="Mr, Mrs, Ms">
+        <text>
+          <base>the purchaser's title</base>
+        </text>
+      </attribute>
+      <attribute name="4462beaf-d22c-47c1-ad5f-1035d660763f" type="text" validation-message="Invalid value." regexp="@">
+        <text>
+          <base>the purchaser's email</base>
+        </text>
+      </attribute>
+      <attribute name="50d75371-b0f1-4674-82dc-ab81f33e0519" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's first name</base>
+        </text>
+      </attribute>
+      <attribute name="c379c6d3-9fce-4b45-949f-167aa5cc04d4" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's last name</base>
+        </text>
+      </attribute>
+      <attribute name="917f5475-01b9-48b9-9ea8-df82f5b61df9" type="number" validation-message="Invalid value." min-value="8" max-value="10" int-only="false">
+        <text>
+          <base>the purchaser's phone number</base>
+        </text>
+      </attribute>
+      <attribute name="a9827882-4644-4663-859d-22c2da663d02" type="boolean" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser would like the ATO to contact them via email</base>
+          <parse>s(ver('12.2.7.797'),v(like+would,t(simple,modal,normal)),sb('the purchaser',plural),o('the ATO to contact them via email'))</parse>
+        </text>
+      </attribute>
     </entity>
   </entities>
   <relationships></relationships>

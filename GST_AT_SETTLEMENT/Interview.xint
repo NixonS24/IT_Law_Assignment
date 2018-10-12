@@ -5,7 +5,7 @@
   <screens>
     <Screen Title="Welcome to GST AT Settlement" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="ae93748a-381d-4e26-9843-19dfa7f16d44">
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="Fill in the application to determine whether you have a GST withholding obligation on your recent property purchase or sale. " ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
+        <LabelControl TextStyle="Normal" Caption="Fill in the application to determine whether you have or are impacted by aGST withholding obligation on your recent property purchase/sale.  " ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
         <LabelControl TextStyle="Normal" Caption="Importantly, we will help you identify whether the GST at settlement rules apply to you (or your client) and what steps you must take to meet your obligation(s). " ControlWidth="0" DefaultState="enabled" ID="f13983a8-4f2c-4f7e-9783-0f058b01e353" />
         <LabelControl TextStyle="Normal" Caption="To find out more about the legislative scheme please &lt;a href=&quot;/&quot;&gt; click here &lt;/a&gt;" ControlWidth="0" DefaultState="enabled" ID="e615d72d-9abf-4487-92f7-91547efc5e0b" />
       </Controls>
@@ -68,6 +68,27 @@
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;sellers&lt;/b&gt;. If you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
       </Controls>
     </Screen>
+    <Screen Title="GST property settlement withholding notification (Form 1)" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
+      <Controls>
+        <LabelControl TextStyle="Normal" Caption="You must complete a &lt;b&gt;  GST property settlement witholding notification (Form 1) &lt;/b&gt; and submit it to the ATO in order to comply with your obligation." ControlWidth="0" DefaultState="enabled" ID="f9cb89ed-eb8d-4b33-a7c6-da87b9644986" />
+        <LabelControl TextStyle="Normal" Caption="&lt;i&gt; Fill in the following information: &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="684b17b7-c930-420d-a1cf-64f957a90221" />
+        <AttributeInputControl Attribute="dfc29478-de1f-4116-91b8-2f4f94b1913a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" ControlWidth="0" DefaultState="enabled" ID="708c53fd-df8b-4c15-adc5-6906e07e4193" />
+        <AttributeInputControl Attribute="50d75371-b0f1-4674-82dc-ab81f33e0519" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First Name" ControlWidth="0" DefaultState="enabled" ID="81474d0d-c8b9-4a02-9da1-e2e5a3c1dabc" />
+        <AttributeInputControl Attribute="c379c6d3-9fce-4b45-949f-167aa5cc04d4" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last Name" ControlWidth="0" DefaultState="enabled" ID="cb4fea2c-e128-4dca-bd29-dcecfd663708" />
+        <AttributeInputControl Attribute="917f5475-01b9-48b9-9ea8-df82f5b61df9" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone Number" ControlWidth="0" DefaultState="enabled" ID="a5f6e6b8-ee1a-46f1-b2e2-552b838c9c6b" />
+        <AttributeInputControl Attribute="a9827882-4644-4663-859d-22c2da663d02" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Would you like the ATO to contact you via email?" ControlWidth="0" DefaultState="enabled" ID="84f3e23a-f4a3-46a3-9519-4f5f543bb874" />
+        <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="2398d589-fc82-4ee0-8d48-ec4f875c1cb9">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="a9827882-4644-4663-859d-22c2da663d02">
+            <Values>
+              <Boolean>true</Boolean>
+            </Values>
+          </HideIfExpr>
+          <Controls>
+            <AttributeInputControl Attribute="4462beaf-d22c-47c1-ad5f-1035d660763f" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Email Address" ControlWidth="0" DefaultState="enabled" ID="05b533cc-563f-4ae6-aca0-1212f7862a0e" />
+          </Controls>
+        </InterviewContainerControl>
+      </Controls>
+    </Screen>
     <Screen Title="Interview Complete" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="825af84d-dac0-42ec-8f11-0eec0551ec25">
       <Controls>
         <ExplanationControl ShowReferenceTags="true" ControlWidth="0" DefaultState="enabled" ID="7e726690-64c1-4a5f-b8fe-f2f7638a902f" />
@@ -90,6 +111,9 @@
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="6a63bb02-6846-47ed-883c-f91c13461480" Title="Seller">
       <ScreenOrderScreen Screen="450219f9-0fb9-4faf-8f76-811329c3a875" />
+    </ScreenOrderItemContainer>
+    <ScreenOrderItemContainer ID="36603f1a-f084-4233-b69b-1a6c0b434107" Title="Form 1">
+      <ScreenOrderScreen Screen="4c106735-ee56-49f8-b673-430cfea83a40" />
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="aade3808-3a07-4e47-9565-19ada1d1a681" Title="Stage 4">
       <ScreenOrderScreen Screen="825af84d-dac0-42ec-8f11-0eec0551ec25" />
