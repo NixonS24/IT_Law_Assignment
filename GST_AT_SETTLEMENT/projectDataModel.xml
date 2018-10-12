@@ -8,16 +8,115 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of residential premises'))</parse>
         </text>
       </attribute>
-    </entity>
-    <entity id="4a6e9b91-6722-4473-b6d6-5d3ec999fe39" name="the new entity" identifying-attribute-name="93bb5142-a60f-4e5f-aab4-19e25031cc63" containment-relationship-id="043ac20b-67ee-4762-8873-d29100424ef1" containment-parent-id="global">
-      <attribute name="93bb5142-a60f-4e5f-aab4-19e25031cc63" type="text" public-name="new_entity" substitutable="true" default-gender="Generic" user-created="true">
+      <attribute name="6204bb79-71b9-40c2-bbed-a586d9c28890" type="boolean">
         <text>
-          <base>the new entity</base>
+          <base>you have purchased or about to purchase the property</base>
+          <parse>s(ver('12.2.7.797'),v(purchase,t(simple,present,perfect)),sb('you',plural),o('or about to purchase the property'))</parse>
+        </text>
+      </attribute>
+      <attribute name="298ebb12-740b-4755-bb04-77e5696e8e46" type="boolean">
+        <text>
+          <base>they have, or are about to purchase property `</base>
+          <parse>s(ver('12.2.7.797'),v(have,t(simple,present,normal)),sb('they',plural),o(', or are about to purchase property `'))</parse>
+        </text>
+      </attribute>
+      <attribute name="6bddf0bc-693b-4afe-b527-5ee7f02fa21a" type="boolean">
+        <text>
+          <base>the person has, or is about to purchase property</base>
+          <parse>s(ver('12.2.7.797'),v(have,t(simple,present,normal)),sb('the person',singular),o(', or is about to purchase property'))</parse>
+        </text>
+      </attribute>
+      <attribute name="78278622-130e-47af-bc1b-47437ea57998" type="boolean">
+        <text>
+          <base>the person has, or is about to sell property</base>
+          <parse>s(ver('12.2.7.797'),v(have,t(simple,present,normal)),sb('the person',singular),o(', or is about to sell property'))</parse>
+        </text>
+      </attribute>
+      <attribute name="02037b16-6a95-43f5-bf8a-1a6e3b06d0fa" type="boolean">
+        <text>
+          <base>the person is a seller of property</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the person',singular),o('a seller of property'))</parse>
+        </text>
+      </attribute>
+      <attribute name="f783059c-e78d-4324-bb27-1844d6123e12" type="boolean" validation-message="Invalid value.">
+        <text>
+          <base>the person is a purchaser of property</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the person',singular),o('a purchaser of property'))</parse>
+        </text>
+      </attribute>
+      <attribute name="4a7623e4-6820-455b-8b73-3f5204485866" type="boolean">
+        <text>
+          <base>the purchaser is the ‘recipient' of a taxably supply</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the purchaser',singular),o('the ‘recipient'' of a taxably supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="4fe7624b-235d-45eb-bf01-59873c3e15bb" type="boolean">
+        <text>
+          <base>the supply is by way of sale or long-term lease</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('by way of sale or long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="2ad8303e-461e-42d0-a7ee-65eece0a4d5f" type="boolean">
+        <text>
+          <base>new residential premises</base>
+          <parse>s(ver('12.2.7.797'),stat('new residential premises'))</parse>
+        </text>
+      </attribute>
+      <attribute name="dc7d90e8-400a-4876-80da-94a83ceec0a3" type="boolean">
+        <text>
+          <base>potential residential premises</base>
+          <parse>s(ver('12.2.7.797'),stat('potential residential premises'))</parse>
+        </text>
+      </attribute>
+      <attribute name="ee1fb526-7ad6-4a68-9700-bb6e616a4729" type="boolean">
+        <text>
+          <base>the supply is of potential residential premises</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of potential residential premises'))</parse>
+        </text>
+      </attribute>
+      <attribute name="2e322da1-6734-4996-af32-4bc62bf8717a" type="boolean">
+        <text>
+          <base>the supply is of new residential premises or of potential residential premises</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of new residential premises or of potential residential premises'))</parse>
+        </text>
+      </attribute>
+      <attribute name="c07e44d5-7e31-4c47-b839-6c91dd4122ba" type="boolean">
+        <text>
+          <base>GST at Settlement will apply to the purchaser</base>
+          <parse>s(ver('12.2.7.797'),v(apply,t(simple,future,normal)),sb('GST at Settlement',plural),o('to the purchaser'))</parse>
+        </text>
+      </attribute>
+      <attribute name="751a0e9a-254c-4668-a0e6-65dda68d2b1a" type="boolean">
+        <text>
+          <base>the seller is register or required to be registered for GST</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the seller',singular),o('register or required to be registered for GST'))</parse>
+        </text>
+      </attribute>
+      <attribute name="e93da0a1-d784-40c0-acd6-48d31f8a5dd8" type="boolean">
+        <text>
+          <base>the sale of the residential premises is input taxes</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the sale of the residential premises',singular),o('input taxes'))</parse>
+        </text>
+      </attribute>
+      <attribute name="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" type="boolean">
+        <text>
+          <base>the sale is a GST-free supply</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the sale',singular),o('a GST-free supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" type="boolean">
+        <text>
+          <base>the supply has been created through substantial renovations</base>
+          <parse>s(ver('12.2.7.797'),v(create,t(simple,present,perfect)),ob('the supply',singular),o('through substantial renovations'))</parse>
+        </text>
+      </attribute>
+      <attribute name="95cab034-4430-490c-99c8-0ac97154a7ab" type="boolean">
+        <text>
+          <base>the supply is of commercial residential premises</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of commercial residential premises'))</parse>
         </text>
       </attribute>
     </entity>
   </entities>
-  <relationships>
-    <relationship relationship-id="043ac20b-67ee-4762-8873-d29100424ef1" reverse-relationship-id="71170b9a-0c28-40c1-b97e-f6c10b7a9cb2" source="global" target="4a6e9b91-6722-4473-b6d6-5d3ec999fe39" is-containment="true" public-id="" reverse-public-id="" text="all instances of the new entity" reverse-text="" type="OneToMany" is-computed="false" silent-if-known="true" invisible-if-known="true" />
-  </relationships>
+  <relationships></relationships>
 </root>
