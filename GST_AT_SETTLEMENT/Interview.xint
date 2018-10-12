@@ -5,9 +5,9 @@
   <screens>
     <Screen Title="Welcome to GST AT Settlement" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="ae93748a-381d-4e26-9843-19dfa7f16d44">
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="Fill in this application to determine whether you have a GST withholding obligation for a property transaction." ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
-        <LabelControl TextStyle="Normal" Caption="Importantly, we will help you identify whether these rules apply to you (or your client) and what steps you must undertake to meet your obligation(s). " ControlWidth="0" DefaultState="enabled" ID="f13983a8-4f2c-4f7e-9783-0f058b01e353" />
-        <LabelControl TextStyle="Normal" Caption="To find out more about the backgroud to this legislation please &lt;a href=&quot;/&quot;&gt; click here &lt;/a&gt;" ControlWidth="0" DefaultState="enabled" ID="e615d72d-9abf-4487-92f7-91547efc5e0b" />
+        <LabelControl TextStyle="Normal" Caption="Fill in the application to determine whether you have a GST withholding obligation on your recent property purchase or sale. " ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
+        <LabelControl TextStyle="Normal" Caption="Importantly, we will help you identify whether the GST at settlement rules apply to you (or your client) and what steps you must take to meet your obligation(s). " ControlWidth="0" DefaultState="enabled" ID="f13983a8-4f2c-4f7e-9783-0f058b01e353" />
+        <LabelControl TextStyle="Normal" Caption="To find out more about the legislative scheme please &lt;a href=&quot;/&quot;&gt; click here &lt;/a&gt;" ControlWidth="0" DefaultState="enabled" ID="e615d72d-9abf-4487-92f7-91547efc5e0b" />
       </Controls>
     </Screen>
     <Screen Title="Disclaimer" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitCaptionOverride="I Agree" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="b40a3f5f-056e-4ab1-9ba6-53a798e79966">
@@ -28,7 +28,7 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="This section applies for a &lt;b&gt;purchaser&lt;/b&gt;, if you are not a purchaser for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="5dafb3b7-dada-4f64-97bd-c61b854aedf5" />
+        <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;purchasers&lt;/b&gt;. If you are not a purchaser for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="5dafb3b7-dada-4f64-97bd-c61b854aedf5" />
         <LabelControl TextStyle="Normal" Caption="The GST Witholding Obligations will apply to the puchaser if the following criteria are met. If &lt;b&gt; unsure &lt;/b&gt; leave blank." ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
         <AttributeInputControl Attribute="4a7623e4-6820-455b-8b73-3f5204485866" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3a03fd03-5636-48e2-993e-ac9a9570135e" />
         <AttributeInputControl Attribute="4fe7624b-235d-45eb-bf01-59873c3e15bb" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="7e228b34-2642-4920-917b-3c0609e47ae5" />
@@ -42,8 +42,8 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <AttributeInputControl Attribute="751a0e9a-254c-4668-a0e6-65dda68d2b1a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="c83a590e-dc7c-4f77-8124-365354974e6f" />
-        <AttributeInputControl Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="77e6bdc4-f787-4676-aebb-65fca2d7d5bd" />
+        <AttributeInputControl Attribute="751a0e9a-254c-4668-a0e6-65dda68d2b1a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Is the seller registered or required to be registered for GST?" ControlWidth="0" DefaultState="enabled" ID="c83a590e-dc7c-4f77-8124-365354974e6f" />
+        <AttributeInputControl Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Is the sale of the residential premises input taxed?" ControlWidth="0" DefaultState="enabled" ID="77e6bdc4-f787-4676-aebb-65fca2d7d5bd" />
         <AttributeInputControl Attribute="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="9d15d307-16fd-4cb2-bb29-cf8ca76f8ea0" />
       </Controls>
     </Screen>
@@ -65,7 +65,7 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="This section applies for a &lt;b&gt;seller&lt;/b&gt;, if you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
+        <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;sellers&lt;/b&gt;. If you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
       </Controls>
     </Screen>
     <Screen Title="Interview Complete" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="825af84d-dac0-42ec-8f11-0eec0551ec25">
