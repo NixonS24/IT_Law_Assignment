@@ -18,7 +18,12 @@
     </Screen>
     <Screen Title="Purchaser or Seller" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="238e3cc8-98b3-4f55-99e6-a59b645b3c02">
       <Controls>
-        <AttributeInputControl Attribute="f783059c-e78d-4324-bb27-1844d6123e12" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="d4eca8be-c075-4cd4-9c5f-9ccc642d491e" />
+        <AttributeInputControl Attribute="f783059c-e78d-4324-bb27-1844d6123e12" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="d4eca8be-c075-4cd4-9c5f-9ccc642d491e">
+          <ManualList>
+            <ListItem Value="Purchaser" />
+            <ListItem Value="Seller" />
+          </ManualList>
+        </AttributeInputControl>
       </Controls>
     </Screen>
     <Screen Title="Purchaser" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="77151818-671a-48c8-89a8-a4f42ef005d9">
@@ -29,7 +34,7 @@
       </ShowScreenExpression>
       <Controls>
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;purchasers&lt;/b&gt;. If you are not a purchaser for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="5dafb3b7-dada-4f64-97bd-c61b854aedf5" />
-        <LabelControl TextStyle="Normal" Caption="The GST Witholding Obligations will apply to the puchaser if the following criteria are met. If &lt;b&gt; unsure &lt;/b&gt; leave blank." ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
+        <LabelControl TextStyle="Normal" Caption="The GST Witholding Obligations will apply to the puchaser if the following criteria are met. If &lt;b&gt; unsure &lt;/b&gt; there please enter &quot;uncertain&quot; and there will be more qualifying questions." ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
         <AttributeInputControl Attribute="4a7623e4-6820-455b-8b73-3f5204485866" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3a03fd03-5636-48e2-993e-ac9a9570135e" />
         <AttributeInputControl Attribute="4fe7624b-235d-45eb-bf01-59873c3e15bb" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="7e228b34-2642-4920-917b-3c0609e47ae5" />
         <AttributeInputControl Attribute="2e322da1-6734-4996-af32-4bc62bf8717a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="19c072eb-378b-4500-b895-284e67c00a9e" />
@@ -72,7 +77,14 @@
       <Controls>
         <LabelControl TextStyle="Normal" Caption="You must complete a &lt;b&gt;  GST property settlement witholding notification (Form 1) &lt;/b&gt; and submit it to the ATO in order to comply with your obligation." ControlWidth="0" DefaultState="enabled" ID="f9cb89ed-eb8d-4b33-a7c6-da87b9644986" />
         <LabelControl TextStyle="Normal" Caption="&lt;i&gt; Fill in the following information: &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="684b17b7-c930-420d-a1cf-64f957a90221" />
-        <AttributeInputControl Attribute="dfc29478-de1f-4116-91b8-2f4f94b1913a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" ControlWidth="0" DefaultState="enabled" ID="708c53fd-df8b-4c15-adc5-6906e07e4193" />
+        <AttributeInputControl Attribute="dfc29478-de1f-4116-91b8-2f4f94b1913a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" ControlWidth="0" DefaultState="enabled" ID="708c53fd-df8b-4c15-adc5-6906e07e4193">
+          <ManualList>
+            <ListItem Value="Mr." />
+            <ListItem Value="Mrs." />
+            <ListItem Value="Miss." />
+            <ListItem Value="Ms." />
+          </ManualList>
+        </AttributeInputControl>
         <AttributeInputControl Attribute="50d75371-b0f1-4674-82dc-ab81f33e0519" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First Name" ControlWidth="0" DefaultState="enabled" ID="81474d0d-c8b9-4a02-9da1-e2e5a3c1dabc" />
         <AttributeInputControl Attribute="c379c6d3-9fce-4b45-949f-167aa5cc04d4" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last Name" ControlWidth="0" DefaultState="enabled" ID="cb4fea2c-e128-4dca-bd29-dcecfd663708" />
         <AttributeInputControl Attribute="917f5475-01b9-48b9-9ea8-df82f5b61df9" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone Number" ControlWidth="0" DefaultState="enabled" ID="a5f6e6b8-ee1a-46f1-b2e2-552b838c9c6b" />

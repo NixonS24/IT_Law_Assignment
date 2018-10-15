@@ -116,7 +116,7 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of commercial residential premises'))</parse>
         </text>
       </attribute>
-      <attribute name="dfc29478-de1f-4116-91b8-2f4f94b1913a" type="text" validation-message="Invalid value." regexp="Mr, Mrs, Ms">
+      <attribute name="dfc29478-de1f-4116-91b8-2f4f94b1913a" type="text" validation-message="Invalid value.">
         <text>
           <base>the purchaser's title</base>
         </text>
