@@ -68,7 +68,7 @@
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;sellers&lt;/b&gt;. If you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
       </Controls>
     </Screen>
-    <Screen Title="GST property settlement withholding notification (Form 1)" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
+    <Screen Title="Form 1- GST property settlement withholding notification" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
       <Controls>
         <LabelControl TextStyle="Normal" Caption="You must complete a &lt;b&gt;  GST property settlement witholding notification (Form 1) &lt;/b&gt; and submit it to the ATO in order to comply with your obligation." ControlWidth="0" DefaultState="enabled" ID="f9cb89ed-eb8d-4b33-a7c6-da87b9644986" />
         <LabelControl TextStyle="Normal" Caption="&lt;i&gt; Fill in the following information: &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="684b17b7-c930-420d-a1cf-64f957a90221" />
