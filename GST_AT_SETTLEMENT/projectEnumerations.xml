@@ -1,2 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<enumerations product-version="12.2.7.797" />
+<enumerations product-version="12.2.7.797">
+  <project-enum id="186efc19-5cd2-4ce1-b322-f33c3efff8c8" type="text" name="Entity Type">
+    <enum-val is-uncertain="true" />
+    <enum-val value="Individual" />
+    <enum-val value="Non-individual" />
+  </project-enum>
+  <project-enum id="1965a7ca-6b2a-4200-bc0c-683e90328fbf" type="text" name="Entity_type">
+    <enum-val is-uncertain="true" />
+    <enum-val value="Individual" />
+    <enum-val value="Non-individual" />
+  </project-enum>
+</enumerations>

@@ -357,6 +357,7 @@
         <text>
           <base>the purchaser's status</base>
         </text>
+        <enumeration-list ref-id="186efc19-5cd2-4ce1-b322-f33c3efff8c8" />
       </attribute>
       <attribute name="17ef8f12-33ff-4ece-8854-86198a3118a4" type="text" validation-message="Invalid value.">
         <text>
@@ -377,6 +378,17 @@
         <text>
           <base>the applicant's status</base>
         </text>
+      </attribute>
+      <attribute name="78a6d883-8a12-44d9-b977-90e2357b16a9" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's entity type</base>
+        </text>
+      </attribute>
+      <attribute name="886ec295-be4b-478c-9e65-7e0797037d0d" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's entity type</base>
+        </text>
+        <enumeration-list ref-id="1965a7ca-6b2a-4200-bc0c-683e90328fbf" />
       </attribute>
     </entity>
   </entities>
