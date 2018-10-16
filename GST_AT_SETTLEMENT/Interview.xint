@@ -18,10 +18,10 @@
     </Screen>
     <Screen Title="Purchaser or Seller" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="238e3cc8-98b3-4f55-99e6-a59b645b3c02">
       <Controls>
-        <AttributeInputControl Attribute="f783059c-e78d-4324-bb27-1844d6123e12" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="d4eca8be-c075-4cd4-9c5f-9ccc642d491e">
+        <AttributeInputControl Attribute="edc967bd-7223-4bd9-a5df-3cd28e07f727" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Radiobutton" HintText="" Caption="Is the person a purchaser or a seller?" ControlWidth="0" DefaultState="enabled" ID="f3170ebc-5b84-4473-ac48-c842edb2fd26">
           <ManualList>
-            <ListItem Value="Purchaser" />
-            <ListItem Value="Seller" />
+            <ListItem Value="purchaser" />
+            <ListItem Value="seller" />
           </ManualList>
         </AttributeInputControl>
       </Controls>
@@ -35,7 +35,13 @@
       <Controls>
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;purchasers&lt;/b&gt;. If you are not a purchaser for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="5dafb3b7-dada-4f64-97bd-c61b854aedf5" />
         <LabelControl TextStyle="Normal" Caption="The GST Witholding Obligations will apply to the puchaser if the following criteria are met. If &lt;b&gt; unsure &lt;/b&gt; there please enter &quot;uncertain&quot; and there will be more qualifying questions." ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
-        <AttributeInputControl Attribute="4a7623e4-6820-455b-8b73-3f5204485866" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3a03fd03-5636-48e2-993e-ac9a9570135e" />
+        <AttributeInputControl Attribute="4a7623e4-6820-455b-8b73-3f5204485866" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3a03fd03-5636-48e2-993e-ac9a9570135e">
+          <CustomProperties>
+            <CustomProperty Key="Yes" Value="" />
+            <CustomProperty Key="NO" Value="" />
+            <CustomProperty Key="Unsure" Value="" />
+          </CustomProperties>
+        </AttributeInputControl>
         <AttributeInputControl Attribute="4fe7624b-235d-45eb-bf01-59873c3e15bb" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="7e228b34-2642-4920-917b-3c0609e47ae5" />
         <AttributeInputControl Attribute="2e322da1-6734-4996-af32-4bc62bf8717a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="19c072eb-378b-4500-b895-284e67c00a9e" />
         <LabelControl TextStyle="Normal" Caption="It is also important to note that the ATO has instiuted transitional rules that may apply in some instance. Whille this generally will not apply, it may if the contract was entered into &lt;b&gt; before 1 July 2018 &lt;/b&gt;." ControlWidth="0" DefaultState="enabled" ID="6f734c94-0ff4-4dc2-a070-764da7eb7127" />
@@ -61,6 +67,21 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
+        <LabelControl TextStyle="Normal" Caption="&lt;h4&gt; Potential Residential Land &lt;/h4&gt;" ControlWidth="0" DefaultState="enabled" ID="120d4fb9-cbf4-416c-8f6b-165d62f8c2dd" />
+        <AttributeInputControl Attribute="b0999a25-3f22-4f40-ad02-7f024f3b2625" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="b7da88e1-50a2-4e43-9e6f-ddb934944122" />
+        <LabelControl TextStyle="Normal" Caption="'Potential residential land' is defined as &quot;land that it is permissable to use for reidential purposes, but that does not contain any building that are residential premises. &lt;i&gt; s. 195-1 GST Act &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="a02512ef-4e38-40d3-88db-c32208940053" />
+        <AttributeInputControl Attribute="ebc31d92-0b24-4e0e-a2e0-72c857f44d57" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="6079bb25-f335-4047-b23d-d354e1d76551" />
+        <LabelControl TextStyle="Normal" Caption="'Property subdivision plan' is defined as a plan &lt;br&gt; &lt;ul&gt;&lt;li&gt;for the division of real property and &lt;/li&gt;&lt;li&gt;that is registered (however described under an Australian law&lt;/li&gt;&lt;/ul&gt; &lt;i&gt; s. 195-1 GST Act &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="000dafe3-6976-4d6c-a40a-71c798da616a" />
+        <AttributeInputControl Attribute="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="fa9fc18f-54cd-4e37-9af7-982bf50ab948" />
+        <AttributeInputControl Attribute="686acc96-07e2-40bc-a173-02f5cfed8024" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="5227c88d-a4b4-45db-a33b-5917068ede7d" />
+        <AttributeInputControl Attribute="5be68709-95fc-4218-962c-1cb7a8909d72" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="9ece3bdc-9b7b-48c5-a4c7-430fa9bb3496">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="686acc96-07e2-40bc-a173-02f5cfed8024">
+            <Values>
+              <Boolean>true</Boolean>
+            </Values>
+          </HideIfExpr>
+        </AttributeInputControl>
+        <LabelControl TextStyle="Normal" Caption="&lt;h4&gt; New Residential Premises &lt;/h4&gt;" ControlWidth="0" DefaultState="enabled" ID="10e8058b-3efd-4efa-8f16-7d4c609b2893" />
         <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="c499c5ba-96bc-438b-8e68-13a685d17678" />
         <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="cc5d1993-cee4-43c9-b3a6-b5d260f8f767" />
       </Controls>

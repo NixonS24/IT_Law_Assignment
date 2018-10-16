@@ -189,6 +189,47 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,past,normal)),sb('the acceptance of the offer',singular),o('communicated to the other party before 1 July 2018'))</parse>
         </text>
       </attribute>
+      <attribute name="399a030f-fa92-4752-b6f4-f8a4bb2ed66f" type="boolean">
+        <text>
+          <base>the supply is of new residential premises or of potential residential land</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of new residential premises or of potential residential land'))</parse>
+        </text>
+      </attribute>
+      <attribute name="ebc31d92-0b24-4e0e-a2e0-72c857f44d57" type="boolean">
+        <text>
+          <base>the property is included in a 'property subdivision plan'</base>
+          <parse>s(ver('12.2.7.797'),v(include,t(simple,present,normal)),ob('the property',singular),o('in a ''property subdivision plan'''))</parse>
+        </text>
+      </attribute>
+      <attribute name="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b" type="boolean">
+        <text>
+          <base>the property contains any building that is in use for a commercial purpose</base>
+          <parse>s(ver('12.2.7.797'),v(contain,t(simple,present,normal)),sb('the property',singular),o('any building that is in use for a commercial purpose'))</parse>
+        </text>
+      </attribute>
+      <attribute name="686acc96-07e2-40bc-a173-02f5cfed8024" type="boolean">
+        <text>
+          <base>the purchaser is registered for GST</base>
+          <parse>s(ver('12.2.7.797'),v(register,t(simple,present,normal)),ob('the purchaser',singular),o('for GST'))</parse>
+        </text>
+      </attribute>
+      <attribute name="5be68709-95fc-4218-962c-1cb7a8909d72" type="boolean">
+        <text>
+          <base>the purchaser is registered but does not purchase the property for a creditable purpose</base>
+          <parse>s(ver('12.2.7.797'),v(register,t(simple,present,normal)),ob('the purchaser',singular),o('but does not purchase the property for a creditable purpose'))</parse>
+        </text>
+      </attribute>
+      <attribute name="b0999a25-3f22-4f40-ad02-7f024f3b2625" type="boolean">
+        <text>
+          <base>the property is of 'potential residential land'</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the property',singular),o('of ''potential residential land'''))</parse>
+        </text>
+      </attribute>
+      <attribute name="edc967bd-7223-4bd9-a5df-3cd28e07f727" type="auto">
+        <text>
+          <base>the person</base>
+        </text>
+      </attribute>
     </entity>
   </entities>
   <relationships></relationships>
