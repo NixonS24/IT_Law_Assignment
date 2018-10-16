@@ -89,6 +89,10 @@
         </InterviewContainerControl>
       </Controls>
     </Screen>
+    <Screen Title="New Screen" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="275fbb9c-e743-4f3c-a5b2-31d05ce1fc7d" />
+    <Screen Title="New Screen" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4a5c8408-edf8-40ed-ac3e-c82e2d605803" />
+    <Screen Title="New Screen" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="62484eae-cbbc-473d-9fd7-7a5312776f9b" />
+    <Screen Title="New Screen" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="13c3d90d-b654-4d32-99c5-1384870edc17" />
     <Screen Title="Interview Complete" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="825af84d-dac0-42ec-8f11-0eec0551ec25">
       <Controls>
         <ExplanationControl ShowReferenceTags="true" ControlWidth="0" DefaultState="enabled" ID="7e726690-64c1-4a5f-b8fe-f2f7638a902f" />
@@ -114,6 +118,10 @@
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="36603f1a-f084-4233-b69b-1a6c0b434107" Title="Form 1">
       <ScreenOrderScreen Screen="4c106735-ee56-49f8-b673-430cfea83a40" />
+      <ScreenOrderScreen Screen="275fbb9c-e743-4f3c-a5b2-31d05ce1fc7d" />
+      <ScreenOrderScreen Screen="4a5c8408-edf8-40ed-ac3e-c82e2d605803" />
+      <ScreenOrderScreen Screen="62484eae-cbbc-473d-9fd7-7a5312776f9b" />
+      <ScreenOrderScreen Screen="13c3d90d-b654-4d32-99c5-1384870edc17" />
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="aade3808-3a07-4e47-9565-19ada1d1a681" Title="Stage 4">
       <ScreenOrderScreen Screen="825af84d-dac0-42ec-8f11-0eec0551ec25" />
