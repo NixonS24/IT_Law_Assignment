@@ -38,6 +38,8 @@
         <AttributeInputControl Attribute="4a7623e4-6820-455b-8b73-3f5204485866" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3a03fd03-5636-48e2-993e-ac9a9570135e" />
         <AttributeInputControl Attribute="4fe7624b-235d-45eb-bf01-59873c3e15bb" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="7e228b34-2642-4920-917b-3c0609e47ae5" />
         <AttributeInputControl Attribute="2e322da1-6734-4996-af32-4bc62bf8717a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="19c072eb-378b-4500-b895-284e67c00a9e" />
+        <LabelControl TextStyle="Normal" Caption="It is also important to note that the ATO has instiuted transitional rules that may apply in some instance. Whille this generally will not apply, it may if the contract was entered into &lt;b&gt; before 1 July 2018 &lt;/b&gt;." ControlWidth="0" DefaultState="enabled" ID="6f734c94-0ff4-4dc2-a070-764da7eb7127" />
+        <AttributeInputControl Attribute="b7d67cc4-0bd4-460f-b797-a589f6d0cf9f" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="a839b9b7-03ad-41c3-b10c-ff81b352051b" />
       </Controls>
     </Screen>
     <Screen Title="Recipient of taxable supply" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="fa908d44-4471-450b-93db-c232b4d70845">
@@ -63,6 +65,18 @@
         <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="cc5d1993-cee4-43c9-b3a6-b5d260f8f767" />
       </Controls>
     </Screen>
+    <Screen Title="Transitional Rules" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="f01bf0dd-3724-4d41-88c8-990c054264bd">
+      <ShowScreenExpression ExprType="If" Op="==" Attribute="b7d67cc4-0bd4-460f-b797-a589f6d0cf9f">
+        <Values>
+          <uncertain-val />
+        </Values>
+      </ShowScreenExpression>
+      <Controls>
+        <AttributeInputControl Attribute="da3554c5-839a-4b60-94aa-b004f7a4ead6" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="6dab563c-2099-4427-9414-868c31ee0796" />
+        <AttributeInputControl Attribute="40bdd1f4-3134-4588-9215-46f8d876894c" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="89d8479a-a87a-4c2d-94fe-cd4026af3055" />
+        <AttributeInputControl Attribute="aad44216-5cc7-4536-874b-d0b41d8f3983" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="89c041f1-768d-444b-8e5a-b95488590441" />
+      </Controls>
+    </Screen>
     <Screen Title="Seller" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="450219f9-0fb9-4faf-8f76-811329c3a875">
       <ShowScreenExpression ExprType="If" Op="==" Attribute="02037b16-6a95-43f5-bf8a-1a6e3b06d0fa">
         <Values>
@@ -73,7 +87,12 @@
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;sellers&lt;/b&gt;. If you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
       </Controls>
     </Screen>
-    <Screen Title="GST property settlement withholding notification (Form 1)" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
+    <Screen Title="GST property settlement withholding notification (Form 1)" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="4c106735-ee56-49f8-b673-430cfea83a40">
+      <ShowScreenExpression ExprType="If" Op="==" Attribute="c07e44d5-7e31-4c47-b839-6c91dd4122ba">
+        <Values>
+          <Boolean>true</Boolean>
+        </Values>
+      </ShowScreenExpression>
       <Controls>
         <LabelControl TextStyle="Normal" Caption="You must complete a &lt;b&gt;  GST property settlement witholding notification (Form 1) &lt;/b&gt; and submit it to the ATO in order to comply with your obligation." ControlWidth="0" DefaultState="enabled" ID="f9cb89ed-eb8d-4b33-a7c6-da87b9644986" />
         <LabelControl TextStyle="Normal" Caption="&lt;i&gt; Fill in the following information: &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="684b17b7-c930-420d-a1cf-64f957a90221" />
@@ -120,6 +139,7 @@
       <ScreenOrderScreen Screen="77151818-671a-48c8-89a8-a4f42ef005d9" />
       <ScreenOrderScreen Screen="fa908d44-4471-450b-93db-c232b4d70845" />
       <ScreenOrderScreen Screen="40c06611-cc7c-4986-9ea6-ec732b72c7b0" />
+      <ScreenOrderScreen Screen="f01bf0dd-3724-4d41-88c8-990c054264bd" />
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="6a63bb02-6846-47ed-883c-f91c13461480" Title="Seller">
       <ScreenOrderScreen Screen="450219f9-0fb9-4faf-8f76-811329c3a875" />

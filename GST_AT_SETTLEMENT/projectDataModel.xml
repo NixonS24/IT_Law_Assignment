@@ -147,6 +147,48 @@
           <parse>s(ver('12.2.7.797'),v(like+would,t(simple,modal,normal)),sb('the purchaser',plural),o('the ATO to contact them via email'))</parse>
         </text>
       </attribute>
+      <attribute name="9b4a60b0-5f49-4eac-8921-bdb8ad0dd272" type="boolean">
+        <text>
+          <base>the user think the transitional rules apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply,t(simple,present,normal)),sb('the user think the transitional rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="60858afe-4368-4adc-9c64-9401033cfb2a" type="boolean">
+        <text>
+          <base>the contract was entered into before 1 July 2018</base>
+          <parse>s(ver('12.2.7.797'),v(enter,t(simple,past,normal)),ob('the contract',singular),o('into before 1 July 2018'))</parse>
+        </text>
+      </attribute>
+      <attribute name="5f49910e-aa6e-44d1-99a0-f526bf71116b" type="boolean">
+        <text>
+          <base>the transitional rules may apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply+may,t(simple,modal,normal)),sb('the transitional rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="b7d67cc4-0bd4-460f-b797-a589f6d0cf9f" type="boolean">
+        <text>
+          <base>the Transitional Rules apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply,t(simple,present,normal)),sb('the Transitional Rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="da3554c5-839a-4b60-94aa-b004f7a4ead6" type="boolean">
+        <text>
+          <base>the contracts were exchanged between the parties before 1 July 2018,</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,past,normal)),sb('the contracts',plural),o('exchanged between the parties before 1 July 2018,'))</parse>
+        </text>
+      </attribute>
+      <attribute name="40bdd1f4-3134-4588-9215-46f8d876894c" type="boolean">
+        <text>
+          <base>the contract was entered into by the purchaser and the vendor executing two copies of the contract in turn</base>
+          <parse>s(ver('12.2.7.797'),v(enter,t(simple,past,normal)),ob('the contract',singular),o('into by the purchaser and the vendor executing two copies of the contract in turn'))</parse>
+        </text>
+      </attribute>
+      <attribute name="aad44216-5cc7-4536-874b-d0b41d8f3983" type="boolean">
+        <text>
+          <base>the acceptance of the offer was communicated to the other party before 1 July 2018</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,past,normal)),sb('the acceptance of the offer',singular),o('communicated to the other party before 1 July 2018'))</parse>
+        </text>
+      </attribute>
     </entity>
   </entities>
   <relationships></relationships>
