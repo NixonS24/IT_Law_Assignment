@@ -230,6 +230,42 @@
           <base>the person</base>
         </text>
       </attribute>
+      <attribute name="44ab2e77-072e-4230-9c3c-b668565a9b17" type="boolean">
+        <text>
+          <base>the purchaser is known as a 'recipient of a taxable supply</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the purchaser',singular),o('as a ''recipient of a taxable supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="6948a391-a050-4073-8e1e-cbe3e96c7511" type="boolean">
+        <text>
+          <base>the supply is known as by way of sale of long-term lease</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('as by way of sale of long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="99c00618-af7e-4903-bb7f-0bef5a482fd3" type="boolean">
+        <text>
+          <base>the supply is defined as by way of sale or long-term lease</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined as by way of sale or long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="c81738d2-5310-4793-82dd-e7dcebb638f4" type="boolean">
+        <text>
+          <base>the supply is known to be of new residential premises or of potential residential land</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('to be of new residential premises or of potential residential land'))</parse>
+        </text>
+      </attribute>
+      <attribute name="79d2cac3-469c-4f9c-a454-a08e7c2ef07b" type="boolean">
+        <text>
+          <base>any of the following are true</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('any of the following',plural),o('true'))</parse>
+        </text>
+      </attribute>
+      <attribute name="e25f1b49-5eda-401c-89d2-1939ed6b6030" type="boolean">
+        <text>
+          <base>the Transitional Rules are known to not apply</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the Transitional Rules',plural),o('to not apply'))</parse>
+        </text>
+      </attribute>
     </entity>
   </entities>
   <relationships></relationships>
