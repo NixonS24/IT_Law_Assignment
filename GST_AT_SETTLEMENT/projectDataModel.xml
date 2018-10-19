@@ -225,7 +225,7 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the property',singular),o('of ''potential residential land'''))</parse>
         </text>
       </attribute>
-      <attribute name="edc967bd-7223-4bd9-a5df-3cd28e07f727" type="auto">
+      <attribute name="edc967bd-7223-4bd9-a5df-3cd28e07f727" type="auto" validation-message="Invalid value.">
         <text>
           <base>the person</base>
         </text>
@@ -264,6 +264,232 @@
         <text>
           <base>the Transitional Rules are known to not apply</base>
           <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the Transitional Rules',plural),o('to not apply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="cdd30fe1-e4ba-456f-92b8-11a5ae7a3556" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's title</base>
+        </text>
+      </attribute>
+      <attribute name="9408fa59-eab4-4348-b828-cd4c57d28b47" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's first name</base>
+        </text>
+      </attribute>
+      <attribute name="e48a07d5-78b2-4f44-a89b-81a5bbea5904" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's last name</base>
+        </text>
+      </attribute>
+      <attribute name="e42f0fa0-72ab-434a-b638-1f78f0a0a171" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's phone number</base>
+        </text>
+      </attribute>
+      <attribute name="38acee86-b513-4c72-9775-67d786c451e0" type="boolean" validation-message="Invalid value.">
+        <text>
+          <base>the applicant would like the ATO to contact them via email</base>
+          <parse>s(ver('12.2.7.797'),v(like+would,t(simple,modal,normal)),sb('the applicant',plural),o('the ATO to contact them via email'))</parse>
+        </text>
+      </attribute>
+      <attribute name="981632fa-0344-4be9-ba10-0c0366676a37" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's email</base>
+        </text>
+      </attribute>
+      <attribute name="9fb31cee-2180-4880-9bbb-f84fce3b2e8b" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the property type</base>
+        </text>
+      </attribute>
+      <attribute name="cae97438-92eb-4514-9bc5-2576696d4a3d" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the address</base>
+        </text>
+      </attribute>
+      <attribute name="22ef56a7-f100-4c76-af52-bc3343b9e2de" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the suburb or town</base>
+        </text>
+      </attribute>
+      <attribute name="45a7c984-4a1c-40e2-b16c-b11edfc6080c" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the state or territory</base>
+        </text>
+      </attribute>
+      <attribute name="b0fb4046-7af7-4b59-b86c-d7e1e73d1f41" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the postcode</base>
+        </text>
+      </attribute>
+      <attribute name="35b9a775-dd42-44f0-b48d-9cf3eba95935" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the lot</base>
+        </text>
+      </attribute>
+      <attribute name="2ba21c30-b20e-48aa-9f88-e4d4f66d8784" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the plan</base>
+        </text>
+      </attribute>
+      <attribute name="b0b1c1a4-e262-4839-ae86-480352cbe488" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the plan type</base>
+        </text>
+      </attribute>
+      <attribute name="ccef5202-b011-4d73-945e-47c45659c167" type="date" validation-message="Invalid value.">
+        <text>
+          <base>the contract date</base>
+        </text>
+      </attribute>
+      <attribute name="3800ad92-a430-424a-ae60-e7be1543de65" type="date" validation-message="Invalid value.">
+        <text>
+          <base>the expected settlement date</base>
+        </text>
+      </attribute>
+      <attribute name="457548e9-e6f9-4756-9fa9-86f0eb31cbe2" type="currency" validation-message="Invalid value.">
+        <text>
+          <base>the contract price</base>
+        </text>
+      </attribute>
+      <attribute name="833ae112-cb77-4297-a98b-e621cc78e483" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's entity type</base>
+        </text>
+      </attribute>
+      <attribute name="f143f263-bc56-4d68-abea-7e57665f1297" type="date" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's date of birth</base>
+        </text>
+      </attribute>
+      <attribute name="977bbeda-af1c-4a72-83e2-8b5a66b03953" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's ABN</base>
+        </text>
+      </attribute>
+      <attribute name="50ee7866-8a0e-427e-b4bd-c8796a340c99" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's TFN</base>
+        </text>
+      </attribute>
+      <attribute name="f7ea149d-fc5a-4b63-bf50-494774e28379" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's country</base>
+        </text>
+      </attribute>
+      <attribute name="b3cbcb96-6331-4297-b053-6dd931e8199e" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's address</base>
+        </text>
+      </attribute>
+      <attribute name="8e454912-ca5b-40df-8aef-d9a98f963797" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's suburb or town</base>
+        </text>
+      </attribute>
+      <attribute name="09635919-6d6e-4dc2-97a8-9fd93f908f34" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's state or territory</base>
+        </text>
+      </attribute>
+      <attribute name="dbf70d76-34ea-4390-abfe-fb7251d6216a" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's postcode</base>
+        </text>
+      </attribute>
+      <attribute name="2db25ac9-a7ec-4a78-9d80-4740a5f27b5b" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's percentage of ownership</base>
+        </text>
+      </attribute>
+      <attribute name="deeac8a1-fe91-4c31-987e-16d4c5e65668" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the purchaser's entity name</base>
+        </text>
+      </attribute>
+      <attribute name="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's entity type</base>
+        </text>
+      </attribute>
+      <attribute name="fadf1d12-4bce-48f0-88e4-836eb69ee7f1" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's first name</base>
+        </text>
+      </attribute>
+      <attribute name="e40ee1f9-8a3c-4bbf-a691-07dfd0f17c9a" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's last name</base>
+        </text>
+      </attribute>
+      <attribute name="e785dc79-5881-400e-9004-df90afa09ef9" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's ABN</base>
+        </text>
+      </attribute>
+      <attribute name="3a5c4c74-42aa-4b71-9ce3-5de1e1eed649" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's phone number</base>
+        </text>
+      </attribute>
+      <attribute name="04aab979-8602-4dcc-9643-2460d95eb960" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's country</base>
+        </text>
+      </attribute>
+      <attribute name="1ce0e4ee-6702-482f-b294-2e334ae16553" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's address</base>
+        </text>
+      </attribute>
+      <attribute name="b42cdb5c-a393-41fc-b214-559b050b3476" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's suburb or town</base>
+        </text>
+      </attribute>
+      <attribute name="e7caf8bf-ba83-402d-876f-9c145bd653d0" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's state</base>
+        </text>
+      </attribute>
+      <attribute name="4dbf290c-7ecc-456a-9c13-d0d1666076f0" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's postcode</base>
+        </text>
+      </attribute>
+      <attribute name="602b5ca8-1184-40a7-9766-75d47973b215" type="currency" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's withholding payment</base>
+        </text>
+      </attribute>
+      <attribute name="d79ea734-d0bb-4b7f-95f9-ec9a0c0fcbdc" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the supplier's entity name</base>
+        </text>
+      </attribute>
+      <attribute name="f6328175-f97d-4a9e-b211-c562aedfb167" type="text" validation-message="Invalid value.">
+        <text>
+          <base>the applicant's status</base>
+        </text>
+      </attribute>
+      <attribute name="5581ae18-dfae-48a1-ac07-b6f1a715c519" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the lodgement reference number</base>
+        </text>
+      </attribute>
+      <attribute name="576d357f-220b-48e0-93c6-b5aadc9c6261" type="number" validation-message="Invalid value.">
+        <text>
+          <base>the payment reference number</base>
+        </text>
+      </attribute>
+      <attribute name="2888559e-1817-4df3-b5f0-62f674780e77" type="date" validation-message="Invalid value.">
+        <text>
+          <base>the settlement date</base>
+        </text>
+      </attribute>
+      <attribute name="1e6d755f-8f22-46ef-80bd-24ba08cb9a96" type="currency" validation-message="Invalid value.">
+        <text>
+          <base>the total withholding payment</base>
         </text>
       </attribute>
     </entity>
