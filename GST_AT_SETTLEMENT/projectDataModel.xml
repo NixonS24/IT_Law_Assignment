@@ -116,7 +116,7 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of commercial residential premises'))</parse>
         </text>
       </attribute>
-      <attribute name="dfc29478-de1f-4116-91b8-2f4f94b1913a" type="text" validation-message="Invalid value." regexp="Mr, Mrs, Ms">
+      <attribute name="dfc29478-de1f-4116-91b8-2f4f94b1913a" type="text" validation-message="Invalid value.">
         <text>
           <base>the purchaser's title</base>
         </text>
@@ -145,6 +145,125 @@
         <text>
           <base>the purchaser would like the ATO to contact them via email</base>
           <parse>s(ver('12.2.7.797'),v(like+would,t(simple,modal,normal)),sb('the purchaser',plural),o('the ATO to contact them via email'))</parse>
+        </text>
+      </attribute>
+      <attribute name="9b4a60b0-5f49-4eac-8921-bdb8ad0dd272" type="boolean">
+        <text>
+          <base>the user think the transitional rules apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply,t(simple,present,normal)),sb('the user think the transitional rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="60858afe-4368-4adc-9c64-9401033cfb2a" type="boolean">
+        <text>
+          <base>the contract was entered into before 1 July 2018</base>
+          <parse>s(ver('12.2.7.797'),v(enter,t(simple,past,normal)),ob('the contract',singular),o('into before 1 July 2018'))</parse>
+        </text>
+      </attribute>
+      <attribute name="5f49910e-aa6e-44d1-99a0-f526bf71116b" type="boolean">
+        <text>
+          <base>the transitional rules may apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply+may,t(simple,modal,normal)),sb('the transitional rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="b7d67cc4-0bd4-460f-b797-a589f6d0cf9f" type="boolean">
+        <text>
+          <base>the Transitional Rules apply</base>
+          <parse>s(ver('12.2.7.797'),v(apply,t(simple,present,normal)),sb('the Transitional Rules',plural))</parse>
+        </text>
+      </attribute>
+      <attribute name="da3554c5-839a-4b60-94aa-b004f7a4ead6" type="boolean">
+        <text>
+          <base>the contracts were exchanged between the parties before 1 July 2018,</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,past,normal)),sb('the contracts',plural),o('exchanged between the parties before 1 July 2018,'))</parse>
+        </text>
+      </attribute>
+      <attribute name="40bdd1f4-3134-4588-9215-46f8d876894c" type="boolean">
+        <text>
+          <base>the contract was entered into by the purchaser and the vendor executing two copies of the contract in turn</base>
+          <parse>s(ver('12.2.7.797'),v(enter,t(simple,past,normal)),ob('the contract',singular),o('into by the purchaser and the vendor executing two copies of the contract in turn'))</parse>
+        </text>
+      </attribute>
+      <attribute name="aad44216-5cc7-4536-874b-d0b41d8f3983" type="boolean">
+        <text>
+          <base>the acceptance of the offer was communicated to the other party before 1 July 2018</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,past,normal)),sb('the acceptance of the offer',singular),o('communicated to the other party before 1 July 2018'))</parse>
+        </text>
+      </attribute>
+      <attribute name="399a030f-fa92-4752-b6f4-f8a4bb2ed66f" type="boolean">
+        <text>
+          <base>the supply is of new residential premises or of potential residential land</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('of new residential premises or of potential residential land'))</parse>
+        </text>
+      </attribute>
+      <attribute name="ebc31d92-0b24-4e0e-a2e0-72c857f44d57" type="boolean">
+        <text>
+          <base>the property is included in a 'property subdivision plan'</base>
+          <parse>s(ver('12.2.7.797'),v(include,t(simple,present,normal)),ob('the property',singular),o('in a ''property subdivision plan'''))</parse>
+        </text>
+      </attribute>
+      <attribute name="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b" type="boolean">
+        <text>
+          <base>the property contains any building that is in use for a commercial purpose</base>
+          <parse>s(ver('12.2.7.797'),v(contain,t(simple,present,normal)),sb('the property',singular),o('any building that is in use for a commercial purpose'))</parse>
+        </text>
+      </attribute>
+      <attribute name="686acc96-07e2-40bc-a173-02f5cfed8024" type="boolean">
+        <text>
+          <base>the purchaser is registered for GST</base>
+          <parse>s(ver('12.2.7.797'),v(register,t(simple,present,normal)),ob('the purchaser',singular),o('for GST'))</parse>
+        </text>
+      </attribute>
+      <attribute name="5be68709-95fc-4218-962c-1cb7a8909d72" type="boolean">
+        <text>
+          <base>the purchaser is registered but does not purchase the property for a creditable purpose</base>
+          <parse>s(ver('12.2.7.797'),v(register,t(simple,present,normal)),ob('the purchaser',singular),o('but does not purchase the property for a creditable purpose'))</parse>
+        </text>
+      </attribute>
+      <attribute name="b0999a25-3f22-4f40-ad02-7f024f3b2625" type="boolean">
+        <text>
+          <base>the property is of 'potential residential land'</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the property',singular),o('of ''potential residential land'''))</parse>
+        </text>
+      </attribute>
+      <attribute name="edc967bd-7223-4bd9-a5df-3cd28e07f727" type="auto">
+        <text>
+          <base>the person</base>
+        </text>
+      </attribute>
+      <attribute name="44ab2e77-072e-4230-9c3c-b668565a9b17" type="boolean">
+        <text>
+          <base>the purchaser is known as a 'recipient of a taxable supply</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the purchaser',singular),o('as a ''recipient of a taxable supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="6948a391-a050-4073-8e1e-cbe3e96c7511" type="boolean">
+        <text>
+          <base>the supply is known as by way of sale of long-term lease</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('as by way of sale of long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="99c00618-af7e-4903-bb7f-0bef5a482fd3" type="boolean">
+        <text>
+          <base>the supply is defined as by way of sale or long-term lease</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined as by way of sale or long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="c81738d2-5310-4793-82dd-e7dcebb638f4" type="boolean">
+        <text>
+          <base>the supply is known to be of new residential premises or of potential residential land</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('to be of new residential premises or of potential residential land'))</parse>
+        </text>
+      </attribute>
+      <attribute name="79d2cac3-469c-4f9c-a454-a08e7c2ef07b" type="boolean">
+        <text>
+          <base>any of the following are true</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('any of the following',plural),o('true'))</parse>
+        </text>
+      </attribute>
+      <attribute name="e25f1b49-5eda-401c-89d2-1939ed6b6030" type="boolean">
+        <text>
+          <base>the Transitional Rules are known to not apply</base>
+          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the Transitional Rules',plural),o('to not apply'))</parse>
         </text>
       </attribute>
     </entity>
