@@ -356,6 +356,7 @@
         <text>
           <base>the purchaser's entity type</base>
         </text>
+        <enumeration-list ref-id="2a7ceb7d-5fdd-487d-a7a1-d765f61bdb04" />
       </attribute>
       <attribute name="f143f263-bc56-4d68-abea-7e57665f1297" type="date" validation-message="Invalid value.">
         <text>
@@ -490,6 +491,12 @@
       <attribute name="1e6d755f-8f22-46ef-80bd-24ba08cb9a96" type="currency" validation-message="Invalid value.">
         <text>
           <base>the total withholding payment</base>
+        </text>
+      </attribute>
+      <attribute name="484f1d58-7c03-4ae4-a0bc-4f2c1fd61e07" type="boolean">
+        <text>
+          <base>the suppliers or purchasers' contact details have changed since Form 1 was submitted</base>
+          <parse>s(ver('12.2.7.797'),v(change,t(simple,present,perfect)),sb('the suppliers or purchasers'' contact details',plural),o('since Form 1 was submitted'))</parse>
         </text>
       </attribute>
     </entity>
