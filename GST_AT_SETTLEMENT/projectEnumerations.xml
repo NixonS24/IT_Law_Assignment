@@ -1,2 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<enumerations product-version="12.2.7.797" />
+<enumerations product-version="12.2.7.797">
+  <project-enum id="2a7ceb7d-5fdd-487d-a7a1-d765f61bdb04" type="text" name="Entity Type">
+    <enum-val is-uncertain="true" />
+    <enum-val value="Individual" />
+    <enum-val value="Non-individual" />
+  </project-enum>
+</enumerations>
