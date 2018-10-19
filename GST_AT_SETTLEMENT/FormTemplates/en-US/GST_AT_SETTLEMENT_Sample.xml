@@ -1,2 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<global-instance />
+<global-instance>
+  <applicant_title_value>applicant_title_DATA1</applicant_title_value>
+  <applicant_title_text>the applicant's title</applicant_title_text>
+  <applicant_first_name_value>applicant_first_name_DATA2</applicant_first_name_value>
+  <applicant_first_name_text>the applicant's first name</applicant_first_name_text>
+  <applicant_last_name_value>applicant_last_name_DATA3</applicant_last_name_value>
+  <applicant_last_name_text>the applicant's last name</applicant_last_name_text>
+  <applicant_phone_number_value>4</applicant_phone_number_value>
+  <applicant_phone_number_text>the applicant's phone number</applicant_phone_number_text>
+  <applicant_email_value>applicant_email_DATA5</applicant_email_value>
+  <applicant_email_text>the applicant's email</applicant_email_text>
+  <property_type_value>property_type_DATA6</property_type_value>
+  <property_type_text>the property type</property_type_text>
+  <property_address_value>property_address_DATA7</property_address_value>
+  <property_address_text>the address</property_address_text>
+  <property_suburb_town_value>property_suburb_town_DATA8</property_suburb_town_value>
+  <property_suburb_town_text>the suburb or town</property_suburb_town_text>
+  <property_state_territory_value>property_state_territory_DATA9</property_state_territory_value>
+  <property_state_territory_text>the state or territory</property_state_territory_text>
+  <property_postcode_value>10</property_postcode_value>
+  <property_postcode_text>the postcode</property_postcode_text>
+  <property_lot_value>11</property_lot_value>
+  <property_lot_text>the lot</property_lot_text>
+  <property_plan_value>property_plan_DATA12</property_plan_value>
+  <property_plan_text>the plan</property_plan_text>
+  <property_plan_type_value>13</property_plan_type_value>
+  <property_plan_type_text>the plan type</property_plan_type_text>
+  <contract_date_value>10/19/2018</contract_date_value>
+  <contract_date_text>the contract date</contract_date_text>
+  <expected_settlement_date_value>10/19/2018</expected_settlement_date_value>
+  <expected_settlement_date_text>the expected settlement date</expected_settlement_date_text>
+  <contract_price_value>$16.48</contract_price_value>
+  <contract_price_text>the contract price</contract_price_text>
+  <applicant_status_purchaserorrep_value>applicant_status_purchaserorrep_DATA17</applicant_status_purchaserorrep_value>
+  <applicant_status_purchaserorrep_text>the applicant's status</applicant_status_purchaserorrep_text>
+  <lodegement_reference_number_value>18</lodegement_reference_number_value>
+  <lodegement_reference_number_text>the lodgement reference number</lodegement_reference_number_text>
+  <settlement_date_value>10/19/2018</settlement_date_value>
+  <settlement_date_text>the settlement date</settlement_date_text>
+  <total_withholding_amount_value>$20.48</total_withholding_amount_value>
+  <total_withholding_amount_text>the total withholding payment</total_withholding_amount_text>
+</global-instance>

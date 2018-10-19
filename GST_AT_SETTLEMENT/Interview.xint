@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <interview product-version="12.2.7.797">
   <cors />
-  <documents UsePDFA="false" />
+  <documents UsePDFA="false">
+    <document Template="Form_1_Template.rtf" ID="cf431fe0-3184-4d8e-86e3-ba328cd42092" Name="Form_1">
+      <decision-reports />
+    </document>
+  </documents>
   <screens>
     <Screen Title="Welcome to GST AT Settlement" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="ae93748a-381d-4e26-9843-19dfa7f16d44">
       <Controls>
@@ -133,7 +137,7 @@
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;sellers&lt;/b&gt;. If you are not a seller for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="196ca68f-03a9-44cc-86e3-604a58bc336b" />
       </Controls>
     </Screen>
-    <Screen Title="From 1 - GST property Settlement witholding notification" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
+    <Screen Title="Form 1 - GST property Settlement witholding notification" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="4c106735-ee56-49f8-b673-430cfea83a40">
       <ShowScreenExpression ExprType="If" Op="==" Attribute="79d2cac3-469c-4f9c-a454-a08e7c2ef07b">
         <Values>
           <Boolean>true</Boolean>
@@ -142,6 +146,12 @@
       <Controls>
         <LabelControl TextStyle="Normal" Caption="You must complete a &lt;b&gt;  GST property settlement witholding notification (Form 1) &lt;/b&gt; and submit it to the ATO in order to comply with your obligation." ControlWidth="0" DefaultState="enabled" ID="f9cb89ed-eb8d-4b33-a7c6-da87b9644986" />
         <LabelControl TextStyle="Normal" Caption="&lt;i&gt; Fill in the following information: &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="684b17b7-c930-420d-a1cf-64f957a90221" />
+        <AttributeInputControl Attribute="f6328175-f97d-4a9e-b211-c562aedfb167" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Are you completing this form as a purchaser of the property or the purchaser's representative?" ControlWidth="0" DefaultState="enabled" ID="341d2714-295b-4d6a-bac5-d6ec12d072eb">
+          <ManualList>
+            <ListItem Value="Purchaser" />
+            <ListItem Value="Representative" />
+          </ManualList>
+        </AttributeInputControl>
         <AttributeInputControl Attribute="cdd30fe1-e4ba-456f-92b8-11a5ae7a3556" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" Caption="Title" ControlWidth="0" DefaultState="enabled" ID="0218c4cf-0c94-44a6-819a-8cb953646952">
           <ManualList>
             <ListItem Value="Miss" />
@@ -151,8 +161,12 @@
             <ListItem Value="Other" />
           </ManualList>
         </AttributeInputControl>
-        <AttributeInputControl Attribute="9408fa59-eab4-4348-b828-cd4c57d28b47" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First name" ControlWidth="0" DefaultState="enabled" ID="0a58e985-76c0-4f6f-ab3d-80450f614592" />
-        <AttributeInputControl Attribute="e48a07d5-78b2-4f44-a89b-81a5bbea5904" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last Name" ControlWidth="0" DefaultState="enabled" ID="b128d36c-0889-47f6-a89f-990035762f51" />
+        <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="3ab6a8f9-8a51-4c99-a3fb-5a53415fda9e">
+          <Controls>
+            <AttributeInputControl Attribute="9408fa59-eab4-4348-b828-cd4c57d28b47" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First name" ControlWidth="0" DefaultState="enabled" ID="0a58e985-76c0-4f6f-ab3d-80450f614592" />
+            <AttributeInputControl Attribute="e48a07d5-78b2-4f44-a89b-81a5bbea5904" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last Name" ControlWidth="0" DefaultState="enabled" ID="b128d36c-0889-47f6-a89f-990035762f51" />
+          </Controls>
+        </InterviewContainerControl>
         <AttributeInputControl Attribute="e42f0fa0-72ab-434a-b638-1f78f0a0a171" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone number" ControlWidth="0" DefaultState="enabled" ID="f1cee619-f3a8-4677-8195-68292f2c0b6a" />
         <AttributeInputControl Attribute="a9827882-4644-4663-859d-22c2da663d02" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Would you like the ATO to contact you via email?" ControlWidth="0" DefaultState="enabled" ID="84f3e23a-f4a3-46a3-9519-4f5f543bb874" />
         <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="2398d589-fc82-4ee0-8d48-ec4f875c1cb9">
@@ -167,31 +181,204 @@
         </InterviewContainerControl>
       </Controls>
     </Screen>
-    <Screen Title="Purchaser details" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="30b980e5-3202-4c20-a0e2-71b16531d044">
+    <Screen Title="Property details" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="185287f9-78c4-4fba-8026-c36b4e55f959">
       <Controls>
-        <EntityGroupControl Entity="8910192f-a495-443d-ad81-a266cdb98d77" DisplayStyle="Portrait" ControlWidth="0" DefaultState="enabled" ID="ec9f752e-52ae-466d-ba6a-111bd2072b53">
-          <Controls>
-            <AttributeInputControl Attribute="833ae112-cb77-4297-a98b-e621cc78e483" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="2e858a7b-d063-4639-80bc-4497590ce4ff" />
-            <AttributeInputControl Attribute="50d75371-b0f1-4674-82dc-ab81f33e0519" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First Name" ControlWidth="0" DefaultState="enabled" ID="a90b1458-ed06-435a-a0cc-81ba881c03d5" />
-            <AttributeInputControl Attribute="c379c6d3-9fce-4b45-949f-167aa5cc04d4" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last Name" ControlWidth="0" DefaultState="enabled" ID="6a6d87c7-7681-4745-a1ba-37eaf82f6bdf" />
-            <AttributeInputControl Attribute="f143f263-bc56-4d68-abea-7e57665f1297" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Calendar" HintText="" Caption="DOB" ControlWidth="0" DefaultState="enabled" ID="2c94dea9-6ea8-4927-b849-e7261c76bb68" />
-            <AttributeInputControl Attribute="977bbeda-af1c-4a72-83e2-8b5a66b03953" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="ABN" ControlWidth="0" DefaultState="enabled" ID="a2c7a5cc-00e5-424d-8ea0-963e5fe42d67" />
-            <AttributeInputControl Attribute="50ee7866-8a0e-427e-b4bd-c8796a340c99" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="TFN" ControlWidth="0" DefaultState="enabled" ID="d1eb3736-dca9-42ee-9e52-e4b4dd7b8315" />
-            <AttributeInputControl Attribute="917f5475-01b9-48b9-9ea8-df82f5b61df9" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone number" ControlWidth="0" DefaultState="enabled" ID="5e19cda5-c3ef-478d-adf4-b5decd2b319d" />
-            <LabelControl TextStyle="Normal" Caption="&lt;b&gt;Business/Residential Address &lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="9d997fb6-87a1-41ed-b59c-cf2a1c321513" />
-            <LabelControl TextStyle="Normal" Caption="It is recommended to provide a business address if available." ControlWidth="0" DefaultState="enabled" ID="8c084573-128d-482c-9696-6a7b14887972" />
-            <AttributeInputControl Attribute="f7ea149d-fc5a-4b63-bf50-494774e28379" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Country" ControlWidth="0" DefaultState="enabled" ID="e6235ff5-88c7-426c-85c8-c1d723be19be" />
-            <AttributeInputControl Attribute="09635919-6d6e-4dc2-97a8-9fd93f908f34" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" ControlWidth="0" DefaultState="enabled" ID="9e5e79cd-0513-4bfc-884d-e4f2ad62744a" />
-            <AttributeInputControl Attribute="2db25ac9-a7ec-4a78-9d80-4740a5f27b5b" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Percentage of Ownership" ControlWidth="0" DefaultState="enabled" ID="abbe5557-3f44-48fe-a947-1f90246bf864" />
-            <AttributeInputControl Attribute="dbf70d76-34ea-4390-abfe-fb7251d6216a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Postcode" ControlWidth="0" DefaultState="enabled" ID="2343f06a-6792-4968-a689-35e97073b40a" />
-            <AttributeInputControl Attribute="b3cbcb96-6331-4297-b053-6dd931e8199e" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" ControlWidth="0" DefaultState="enabled" ID="b9703b7c-73a6-475b-8bc8-42d7e8d6a44d" />
-          </Controls>
-        </EntityGroupControl>
+        <AttributeInputControl Attribute="9fb31cee-2180-4880-9bbb-f84fce3b2e8b" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" Caption="Property type" ControlWidth="0" DefaultState="enabled" ID="90b03325-09fc-4566-80bf-26c4f32e87a0">
+          <ManualList>
+            <ListItem Value="HOUSE" />
+            <ListItem Value="LAND" />
+            <ListItem Value="UNIT" />
+          </ManualList>
+        </AttributeInputControl>
+        <AttributeInputControl Attribute="cae97438-92eb-4514-9bc5-2576696d4a3d" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Address" ControlWidth="0" DefaultState="enabled" ID="f202b1a9-9050-45c3-907a-91d18d9e8ce6" />
+        <AttributeInputControl Attribute="22ef56a7-f100-4c76-af52-bc3343b9e2de" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Suburb/town/locality" ControlWidth="0" DefaultState="enabled" ID="7c7c4c31-82a4-442c-a97a-ec5861b41012" />
+        <AttributeInputControl Attribute="45a7c984-4a1c-40e2-b16c-b11edfc6080c" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" Caption="State/territory" ControlWidth="0" DefaultState="enabled" ID="de47c4aa-1c16-40c2-b5fd-ce8304a26e1d">
+          <ManualList>
+            <ListItem Value="AUSTRALIAN CAPITAL TERRITORY" />
+            <ListItem Value="NEW SOUTH WALES" />
+            <ListItem Value="NORTHERN TERRITORY" />
+            <ListItem Value="QUEENSLAND" />
+            <ListItem Value="SOUTH AUSTRALIA" />
+            <ListItem Value="TASMANIA" />
+            <ListItem Value="VICTORIA" />
+            <ListItem Value="WESTERN AUSTRALIA" />
+          </ManualList>
+        </AttributeInputControl>
+        <AttributeInputControl Attribute="b0fb4046-7af7-4b59-b86c-d7e1e73d1f41" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Postcode" ControlWidth="0" DefaultState="enabled" ID="6a80ab0e-8f0c-4c79-969f-bb7a3d8f9a02" />
+        <AttributeInputControl Attribute="35b9a775-dd42-44f0-b48d-9cf3eba95935" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Lot" ControlWidth="0" DefaultState="enabled" ID="44d293b0-6fef-4439-927f-6f0f82a7a75f" />
+        <AttributeInputControl Attribute="2ba21c30-b20e-48aa-9f88-e4d4f66d8784" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Plan" ControlWidth="0" DefaultState="enabled" ID="e1a8034d-8b32-449b-be14-f138a6697474" />
+        <AttributeInputControl Attribute="b0b1c1a4-e262-4839-ae86-480352cbe488" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Plan type" ControlWidth="0" DefaultState="enabled" ID="ae980154-38e6-431c-913f-95a8851030e5" />
       </Controls>
     </Screen>
-    <Screen Title="New Screen" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="d83cdd80-7964-45fd-9580-f8954567d236" />
-    <Screen Title="Supplier" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="55e2f6b9-1788-4695-8c4b-03aefe5c7b79" />
-    <Screen Title="Summary" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="a88aad4c-d99d-4ec2-9d94-aafe9b894293" />
+    <Screen Title="Purchaser details" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="30b980e5-3202-4c20-a0e2-71b16531d044">
+      <Controls>
+        <EntityCollectControl Relationship="2ce27efb-474b-420a-a64a-791ca72e84a6" DisplayStyle="Portrait" AddButtonCaptionOverride="Add another purchaser" ButtonsExist="true" DefaultBlankInstances="1" ControlWidth="0" DefaultState="enabled" ID="e19d8aea-c1ad-4564-b21a-75c5ff1b6867">
+          <Controls>
+            <AttributeInputControl Attribute="833ae112-cb77-4297-a98b-e621cc78e483" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Entity type" ControlWidth="0" DefaultState="enabled" ID="ed160439-5e61-495f-8653-f28887234c87" />
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="1ab3d2f1-c170-4f24-bf4f-60dde2f949e7">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <String>Individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="50d75371-b0f1-4674-82dc-ab81f33e0519" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First name" ControlWidth="0" DefaultState="enabled" ID="fef3c595-9cc3-409d-a811-b73408157d15" />
+                <AttributeInputControl Attribute="c379c6d3-9fce-4b45-949f-167aa5cc04d4" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last name" ControlWidth="0" DefaultState="enabled" ID="7cbbf105-2fe0-47d8-ab7c-fc2cef48ad2c" />
+                <AttributeInputControl Attribute="f143f263-bc56-4d68-abea-7e57665f1297" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Calendar" HintText="" Caption="Date of Birth" ControlWidth="0" DefaultState="enabled" ID="bbc9be56-02f4-4c23-9293-6b1cc64b6853" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="74f66d60-51e8-45eb-ad37-97d5f9bc9a25">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <String>Non-individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="deeac8a1-fe91-4c31-987e-16d4c5e65668" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Entity name" ControlWidth="0" DefaultState="enabled" ID="70fbaaea-d784-4288-991b-4fd3f311eea7" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="99e8fad4-10d4-4f2f-9ce5-235ecad34832">
+              <HideIfExpr ExprType="If" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <uncertain-val />
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="50ee7866-8a0e-427e-b4bd-c8796a340c99" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="TFN" ControlWidth="0" DefaultState="enabled" ID="3fc6d858-36e3-4302-8590-e5a9c21a9b71" />
+                <AttributeInputControl Attribute="977bbeda-af1c-4a72-83e2-8b5a66b03953" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="ABN" ControlWidth="0" DefaultState="enabled" ID="45195ee6-cc85-4591-8091-efb38e2c2da5" />
+                <AttributeInputControl Attribute="917f5475-01b9-48b9-9ea8-df82f5b61df9" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone number" ControlWidth="0" DefaultState="enabled" ID="addd1d1d-e9df-4a8e-81ce-477c6411aa7c" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="f1d9980c-36af-423c-a5fd-d6ee837ec945">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <String>Non-individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <LabelControl TextStyle="Heading2" Caption="&lt;b&gt;Business address &lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="ee1d47db-75db-4c68-9653-038d3ee69db4" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="false" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="75305528-f212-4be4-9b35-2896d5284909">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <String>Individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <LabelControl TextStyle="Heading2" Caption="&lt;b&gt;Business/residential address&lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="8daf4924-2641-4787-88ff-5fd33a32e8e1" />
+                <LabelControl TextStyle="Normal" Caption="&lt;i&gt;It is recommended to provide a business address if available. &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="735ec4f4-d86f-40a6-923b-27dfd02c4017" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="false" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="362635b9-a708-4abe-8d69-2e3302c8e153">
+              <HideIfExpr ExprType="If" Op="==" Attribute="833ae112-cb77-4297-a98b-e621cc78e483">
+                <Values>
+                  <uncertain-val />
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="f7ea149d-fc5a-4b63-bf50-494774e28379" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Country" ControlWidth="0" DefaultState="enabled" ID="14f4458c-3855-448b-833f-4bd33326caaf" />
+                <AttributeInputControl Attribute="b3cbcb96-6331-4297-b053-6dd931e8199e" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Address" ControlWidth="0" DefaultState="enabled" ID="9122426e-fdfc-4e4f-a90f-262a5c837a24" />
+                <AttributeInputControl Attribute="8e454912-ca5b-40df-8aef-d9a98f963797" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" Caption="Suburb/town/locality" ControlWidth="0" DefaultState="enabled" ID="ee49c26d-d588-4c0b-8b79-b31ec1c47169">
+                  <ManualList>
+                    <ListItem Value="AUSTRALIAN CAPITAL TERRITORY" />
+                    <ListItem Value="NEW SOUTH WALES" />
+                    <ListItem Value="NORTHERN TERRITORY" />
+                    <ListItem Value="QUEENSLAND" />
+                    <ListItem Value="SOUTH AUSTRALIA" />
+                    <ListItem Value="TASMANIA" />
+                    <ListItem Value="VICTORIA" />
+                    <ListItem Value="WESTERN AUSTRALIA" />
+                  </ManualList>
+                </AttributeInputControl>
+                <AttributeInputControl Attribute="09635919-6d6e-4dc2-97a8-9fd93f908f34" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="State/territory" ControlWidth="0" DefaultState="enabled" ID="221abab6-5522-4d6e-aba1-4b748bc2e1a4" />
+                <AttributeInputControl Attribute="dbf70d76-34ea-4390-abfe-fb7251d6216a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Postcode" ControlWidth="0" DefaultState="enabled" ID="5befd2d8-b96b-4e87-b0dd-7cf12badd8b3" />
+                <AttributeInputControl Attribute="2db25ac9-a7ec-4a78-9d80-4740a5f27b5b" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Percentage of ownership" ControlWidth="0" DefaultState="enabled" ID="2d0b76a3-b057-467a-90c5-9fc754274a65" />
+              </Controls>
+            </InterviewContainerControl>
+          </Controls>
+        </EntityCollectControl>
+      </Controls>
+    </Screen>
+    <Screen Title="Supplier details" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="55e2f6b9-1788-4695-8c4b-03aefe5c7b79">
+      <Controls>
+        <EntityCollectControl Relationship="ebcefbc3-8406-4a83-85bf-f1d219d2f85a" DisplayStyle="Portrait" AddButtonCaptionOverride="Add another supplier" ButtonsExist="true" DefaultBlankInstances="1" ControlWidth="0" DefaultState="enabled" ID="d2498b47-2bae-4924-b48e-5a85d913fa7b">
+          <Controls>
+            <AttributeInputControl Attribute="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Entity type" ControlWidth="0" DefaultState="enabled" ID="bebed2dd-b923-4348-850a-1e6803db6811" />
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="142612dc-c79b-47b1-a8b2-578942da216b">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4">
+                <Values>
+                  <String>Individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="fadf1d12-4bce-48f0-88e4-836eb69ee7f1" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="First name" ControlWidth="0" DefaultState="enabled" ID="f74edda7-47ef-4054-bf61-89910d88e9fb" />
+                <AttributeInputControl Attribute="e40ee1f9-8a3c-4bbf-a691-07dfd0f17c9a" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Last name" ControlWidth="0" DefaultState="enabled" ID="807b4464-2e31-4df7-8210-6b44878b2bc0" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="false" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="1bbf1623-3564-4eb3-a245-92f4b6c5af7f">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4">
+                <Values>
+                  <String>Non-individual</String>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="d79ea734-d0bb-4b7f-95f9-ec9a0c0fcbdc" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Entity name" ControlWidth="0" DefaultState="enabled" ID="aa6f4e95-662e-4da3-b4cd-6c75b6421e73" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="true" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="6cd8eab1-eb45-42fe-8e3a-b378d7d1da80">
+              <HideIfExpr ExprType="If" Op="==" Attribute="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4">
+                <Values>
+                  <uncertain-val />
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="e785dc79-5881-400e-9004-df90afa09ef9" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="ABN" ControlWidth="0" DefaultState="enabled" ID="7c2dad09-c227-4cf3-b69b-c67b6605d133" />
+                <AttributeInputControl Attribute="3a5c4c74-42aa-4b71-9ce3-5de1e1eed649" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Phone number" ControlWidth="0" DefaultState="enabled" ID="72dad23a-97ce-4fd9-94b3-415de076752a" />
+                <LabelControl TextStyle="Heading2" Caption="&lt;b&gt;Business address&lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="18589992-024b-4b5f-9a97-c0c7efb9ab8f" />
+                <LabelControl TextStyle="Normal" ControlWidth="0" DefaultState="enabled" ID="45f874ec-d03b-49d5-88a2-141baa5d47a0" />
+                <AttributeInputControl Attribute="04aab979-8602-4dcc-9643-2460d95eb960" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Country" ControlWidth="0" DefaultState="enabled" ID="bd210393-1fdc-4886-91f2-c04b1f54452b" />
+                <AttributeInputControl Attribute="1ce0e4ee-6702-482f-b294-2e334ae16553" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Address" ControlWidth="0" DefaultState="enabled" ID="4545c7fd-5e52-4f50-af8f-87e0c37edad2" />
+                <AttributeInputControl Attribute="b42cdb5c-a393-41fc-b214-559b050b3476" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Suburb/town/locality" ControlWidth="0" DefaultState="enabled" ID="cc0473a7-3bf8-4397-948c-af7d27466203" />
+                <AttributeInputControl Attribute="e7caf8bf-ba83-402d-876f-9c145bd653d0" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="Dropdown" HintText="" Caption="State/territory" ControlWidth="0" DefaultState="enabled" ID="959ae0cf-7064-40c7-9a0f-4072a4fa0712">
+                  <ManualList>
+                    <ListItem Value="AUSTRALIAN CAPITAL TERRITORY" />
+                    <ListItem Value="NEW SOUTH WALES" />
+                    <ListItem Value="NORTHERN TERRITORY" />
+                    <ListItem Value="QUEENSLAND" />
+                    <ListItem Value="SOUTH AUSTRALIA" />
+                    <ListItem Value="TASMANIA" />
+                    <ListItem Value="VICTORIA" />
+                    <ListItem Value="WESTERN AUSTRALIA" />
+                  </ManualList>
+                </AttributeInputControl>
+                <AttributeInputControl Attribute="4dbf290c-7ecc-456a-9c13-d0d1666076f0" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Postcode" ControlWidth="0" DefaultState="enabled" ID="02de29ca-ea57-4821-a313-a884f77f75f9" />
+              </Controls>
+            </InterviewContainerControl>
+            <InterviewContainerControl HorizontalLayout="false" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="e5ed16dc-6d3a-4e98-87a2-1ef2bbda23a8">
+              <HideIfExpr ExprType="If" Op="==" Attribute="89cf7eeb-b6f1-49a2-ba78-fcfd3c95b1e4">
+                <Values>
+                  <uncertain-val />
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <LabelControl TextStyle="Heading2" Caption="&lt;b&gt;Withholding payment&lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="ce09ab61-6bae-48b9-930c-76df7c4839b0" />
+                <AttributeInputControl Attribute="602b5ca8-1184-40a7-9766-75d47973b215" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="false" InputStyle="TextBox" HintText="" Caption="Proportion of withholding payment" ControlWidth="0" DefaultState="enabled" ID="98581cc8-614e-4b6f-9574-47fff5c89ada" />
+              </Controls>
+            </InterviewContainerControl>
+          </Controls>
+        </EntityCollectControl>
+      </Controls>
+    </Screen>
+    <Screen Title="Summary" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="a88aad4c-d99d-4ec2-9d94-aafe9b894293">
+      <Controls>
+        <LabelControl TextStyle="Heading2" Caption="&lt;b&gt; Declaration &lt;/b&gt;" ControlWidth="0" DefaultState="enabled" ID="1c2e1755-1b00-4821-9200-63f1b188a020" />
+        <LabelControl TextStyle="Normal" Caption="- I am a purchaser/representative named in this form and the purchaser and property information contained in this form is true and correct" ControlWidth="0" DefaultState="enabled" ID="c18c9fae-7c7d-41d0-9067-8bb1ac25deb7" />
+        <LabelControl TextStyle="Normal" Caption="- I have also included information in this form as provided by the supplier/s" ControlWidth="0" DefaultState="enabled" ID="4a6b2d53-e7b8-454c-ba51-11f96fb292b1" />
+        <AttributeInputControl Attribute="d9b91e56-dae4-46df-854e-053b51aa7aee" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" Caption="Do you agree to the declaration?" ControlWidth="0" DefaultState="enabled" ID="4e5a3e01-2e70-4087-944e-f42013206d08" />
+      </Controls>
+    </Screen>
+    <Screen Title="Form 2- GST property settlement date confirmation" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="34e85ed2-58ad-4147-832c-c21742c89286" />
     <Screen Title="Interview Complete" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="always" ID="825af84d-dac0-42ec-8f11-0eec0551ec25">
       <Controls>
         <ExplanationControl ShowReferenceTags="true" ControlWidth="0" DefaultState="enabled" ID="7e726690-64c1-4a5f-b8fe-f2f7638a902f" />
@@ -219,12 +406,13 @@
     </ScreenOrderItemContainer>
     <ScreenOrderItemContainer ID="36603f1a-f084-4233-b69b-1a6c0b434107" Title="Form 1">
       <ScreenOrderScreen Screen="4c106735-ee56-49f8-b673-430cfea83a40" />
+      <ScreenOrderScreen Screen="185287f9-78c4-4fba-8026-c36b4e55f959" />
       <ScreenOrderScreen Screen="30b980e5-3202-4c20-a0e2-71b16531d044" />
-      <ScreenOrderScreen Screen="d83cdd80-7964-45fd-9580-f8954567d236" />
       <ScreenOrderScreen Screen="55e2f6b9-1788-4695-8c4b-03aefe5c7b79" />
       <ScreenOrderScreen Screen="a88aad4c-d99d-4ec2-9d94-aafe9b894293" />
     </ScreenOrderItemContainer>
-    <ScreenOrderItemContainer ID="aade3808-3a07-4e47-9565-19ada1d1a681" Title="Stage 4">
+    <ScreenOrderItemContainer ID="aade3808-3a07-4e47-9565-19ada1d1a681" Title="Form 2">
+      <ScreenOrderScreen Screen="34e85ed2-58ad-4147-832c-c21742c89286" />
       <ScreenOrderScreen Screen="825af84d-dac0-42ec-8f11-0eec0551ec25" />
     </ScreenOrderItemContainer>
   </screen-order>
