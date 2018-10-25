@@ -26,9 +26,9 @@
   <property_plan_text>the plan</property_plan_text>
   <property_plan_type_value>13</property_plan_type_value>
   <property_plan_type_text>the plan type</property_plan_type_text>
-  <contract_date_value>10/19/2018</contract_date_value>
+  <contract_date_value>10/25/2018</contract_date_value>
   <contract_date_text>the contract date</contract_date_text>
-  <expected_settlement_date_value>10/19/2018</expected_settlement_date_value>
+  <expected_settlement_date_value>10/25/2018</expected_settlement_date_value>
   <expected_settlement_date_text>the expected settlement date</expected_settlement_date_text>
   <contract_price_value>$16.48</contract_price_value>
   <contract_price_text>the contract price</contract_price_text>
@@ -36,7 +36,7 @@
   <applicant_status_purchaserorrep_text>the applicant's status</applicant_status_purchaserorrep_text>
   <lodegement_reference_number_value>18</lodegement_reference_number_value>
   <lodegement_reference_number_text>the lodgement reference number</lodegement_reference_number_text>
-  <settlement_date_value>10/19/2018</settlement_date_value>
+  <settlement_date_value>10/25/2018</settlement_date_value>
   <settlement_date_text>the settlement date</settlement_date_text>
   <total_withholding_amount_value>$20.48</total_withholding_amount_value>
   <total_withholding_amount_text>the total withholding payment</total_withholding_amount_text>

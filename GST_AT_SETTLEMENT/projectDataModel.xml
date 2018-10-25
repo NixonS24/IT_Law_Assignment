@@ -250,7 +250,7 @@
           <base>the state or territory</base>
         </text>
       </attribute>
-      <attribute name="b0fb4046-7af7-4b59-b86c-d7e1e73d1f41" type="number" validation-message="Invalid value." user-created="true" public-name="property_postcode">
+      <attribute name="b0fb4046-7af7-4b59-b86c-d7e1e73d1f41" type="number" validation-message="Invalid value." user-created="true" public-name="property_postcode" int-only="false">
         <text>
           <base>the postcode</base>
         </text>
@@ -403,7 +403,7 @@
           <base>the purchaser's last name</base>
         </text>
       </attribute>
-      <attribute name="917f5475-01b9-48b9-9ea8-df82f5b61df9" type="number" validation-message="Invalid value." min-value="8" max-value="10" public-name="purchaser_phone_number" int-only="false">
+      <attribute name="917f5475-01b9-48b9-9ea8-df82f5b61df9" type="number" validation-message="Invalid value." public-name="purchaser_phone_number" int-only="false">
         <text>
           <base>the purchaser's phone number</base>
         </text>
