@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root product-version="12.2.7.797">
+<root product-version="12.2.12.0">
   <entities>
     <entity ref="global">
       <attribute name="82c025bf-7bcc-4adb-aad0-166d19d49740" type="boolean" validation-message="Invalid value.">
@@ -230,17 +230,17 @@
           <base>the person</base>
         </text>
       </attribute>
-      <attribute name="44ab2e77-072e-4230-9c3c-b668565a9b17" type="boolean">
+      <attribute name="44ab2e77-072e-4230-9c3c-b668565a9b17" type="text" validation-message="Invalid value." user-created="true">
         <text>
-          <base>the purchaser is known as a 'recipient of a taxable supply</base>
-          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the purchaser',singular),o('as a ''recipient of a taxable supply'))</parse>
+          <base>The user knows that the purchaser is a ‘recipient' of a ‘taxable supply'</base>
         </text>
+        <enumeration-list ref-id="128e5a11-c1c6-4f9a-b755-0894e0ee3bca" />
       </attribute>
-      <attribute name="6948a391-a050-4073-8e1e-cbe3e96c7511" type="boolean">
+      <attribute name="6948a391-a050-4073-8e1e-cbe3e96c7511" type="text" user-created="true" validation-message="Invalid value.">
         <text>
-          <base>the supply is known as by way of sale of long-term lease</base>
-          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('as by way of sale of long-term lease'))</parse>
+          <base>The user knows that the supply is by way of sale of long-term lease</base>
         </text>
+        <enumeration-list ref-id="585201cb-f2e4-4972-9ee9-685822043fdb" />
       </attribute>
       <attribute name="99c00618-af7e-4903-bb7f-0bef5a482fd3" type="boolean">
         <text>
@@ -248,11 +248,11 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined as by way of sale or long-term lease'))</parse>
         </text>
       </attribute>
-      <attribute name="c81738d2-5310-4793-82dd-e7dcebb638f4" type="boolean">
+      <attribute name="c81738d2-5310-4793-82dd-e7dcebb638f4" type="text" user-created="true" validation-message="Invalid value.">
         <text>
-          <base>the supply is known to be of new residential premises or of potential residential land</base>
-          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the supply',singular),o('to be of new residential premises or of potential residential land'))</parse>
+          <base>The user knows that the supply is of new residential premises or of potential residential land</base>
         </text>
+        <enumeration-list ref-id="b5626b5d-05f3-4724-8348-c33f51b4acee" />
       </attribute>
       <attribute name="79d2cac3-469c-4f9c-a454-a08e7c2ef07b" type="boolean">
         <text>
@@ -260,11 +260,11 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('any of the following',plural),o('true'))</parse>
         </text>
       </attribute>
-      <attribute name="e25f1b49-5eda-401c-89d2-1939ed6b6030" type="boolean">
+      <attribute name="e25f1b49-5eda-401c-89d2-1939ed6b6030" type="text" silent-if-unknown="true" invisible-if-unknown="true" validation-message="Invalid value." user-created="true">
         <text>
-          <base>the Transitional Rules are known to not apply</base>
-          <parse>s(ver('12.2.7.797'),v(know,t(simple,present,normal)),ob('the Transitional Rules',plural),o('to not apply'))</parse>
+          <base>The user knows that the Transitional Rules apply</base>
         </text>
+        <enumeration-list ref-id="87c4b499-b4d6-4e34-ab14-78edf6bc4b12" />
       </attribute>
       <attribute name="cdd30fe1-e4ba-456f-92b8-11a5ae7a3556" type="text" validation-message="Invalid value.">
         <text>
@@ -503,6 +503,42 @@
         <text>
           <base>the supply is defined to be of new residential premises</base>
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined to be of new residential premises'))</parse>
+        </text>
+      </attribute>
+      <attribute name="eba118f1-7d43-4ceb-a413-95a80f5eebc7" type="boolean">
+        <text>
+          <base>the purchaser will be liable to pay an amount to the Commissioner</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,future,normal)),sb('the purchaser',singular),o('liable to pay an amount to the Commissioner'))</parse>
+        </text>
+      </attribute>
+      <attribute name="c8c2866f-8d6b-4e10-9a3b-7d9cc37b36ac" type="boolean">
+        <text>
+          <base>the purchaser is an entity</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the purchaser',singular),o('an entity'))</parse>
+        </text>
+      </attribute>
+      <attribute name="a8c1bfbf-314b-4ae2-b406-24cf9df35ba7" type="boolean">
+        <text>
+          <base>the supply is made for consideration</base>
+          <parse>s(ver('12.2.12.131'),v(make,t(simple,present,normal)),ob('the supply',singular),o('for consideration'))</parse>
+        </text>
+      </attribute>
+      <attribute name="ac7c5d90-ffac-4404-98f9-4ab719de6ba5" type="boolean">
+        <text>
+          <base>the supply is made in the course or furtherance of an enterprise that the entity carries on</base>
+          <parse>s(ver('12.2.12.131'),v(make,t(simple,present,normal)),ob('the supply',singular),o('in the course or furtherance of an enterprise that the entity carries on'))</parse>
+        </text>
+      </attribute>
+      <attribute name="e8839024-c624-48ba-aaae-490f15784961" type="boolean">
+        <text>
+          <base>the supply is connected with Australia</base>
+          <parse>s(ver('12.2.12.131'),v(connect,t(simple,present,normal)),ob('the supply',singular),o('with Australia'))</parse>
+        </text>
+      </attribute>
+      <attribute name="b5d60d2e-5ab1-4fae-82d7-647983249129" type="boolean">
+        <text>
+          <base>the entity is registered, or required to be registered, for GST</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the entity',singular),o('registered, or required to be registered, for GST'))</parse>
         </text>
       </attribute>
     </entity>
