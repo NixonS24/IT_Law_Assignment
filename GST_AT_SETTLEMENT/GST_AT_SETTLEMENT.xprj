@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<rulebase-project product-version="12.2.7.797" created-ts="2018-10-05 04:24:50Z">
+<rulebase-project product-version="12.2.12.131" created-ts="2018-10-05 04:24:50Z">
   <source-language code="en-US" />
   <source-region code="en-US" />
   <source-timezone id="Etc/GMT" />
   <project-styling>
     <use-legacy-interviews>false</use-legacy-interviews>
-    <button-position>TR</button-position>
+    <button-position>BR</button-position>
     <exit-url></exit-url>
     <show-exit-button>false</show-exit-button>
-    <exit-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
+    <exit-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
     <show-restart-button>false</show-restart-button>
-    <restart-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
-    <collect-button-position>BC</collect-button-position>
+    <restart-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
+    <collect-button-position>TR</collect-button-position>
     <enforce-upload-whitelist>false</enforce-upload-whitelist>
     <upload-extension-whitelist></upload-extension-whitelist>
     <has-back-button>true</has-back-button>
@@ -54,7 +54,7 @@
     <header-alt>Oracle Policy Automation</header-alt>
     <footer-left></footer-left>
     <footer-right></footer-right>
-    <sig-clear-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
+    <sig-clear-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
     <sig-canvas-height>100</sig-canvas-height>
     <sig-canvas-width>498</sig-canvas-width>
     <sig-canvas-line-height>75</sig-canvas-line-height>
@@ -67,10 +67,10 @@
     <speaker-image-url></speaker-image-url>
     <header-text-style font-family="" font-size="x-large" font-bold="false" font-italic="false" text-color="#000" back-color="#fff" />
     <footer-text-style font-family="" font-size="small" font-bold="false" font-italic="false" text-color="#000" back-color="#fff" />
-    <back-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
-    <next-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#1474bf" shadowed="false" rounded="true" />
-    <add-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
-    <remove-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" />
+    <back-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
+    <next-button-style font-family="" font-size="16px" font-bold="false" font-italic="false" text-color="#fff" back-color="#1474bf" shadowed="false" rounded="true" button-size="large" start-color="#1474bf" end-color="#1474bf" active-color="#1474bf" border="" gradient="false" />
+    <add-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
+    <remove-button-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#19739f" shadowed="false" rounded="true" button-size="large" start-color="#19739f" end-color="#19739f" active-color="#19739f" border="" gradient="false" />
     <active-stage-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#3F3F3F" back-color="white" />
     <has-active-stage-style>true</has-active-stage-style>
     <has-active-stage-color>true</has-active-stage-color>
@@ -88,8 +88,8 @@
     <complete-screen-image-url></complete-screen-image-url>
     <incomplete-screen-image-url></incomplete-screen-image-url>
     <screen-title-style font-family="" font-size="x-large" font-bold="true" font-italic="false" text-color="#29303f" back-color="#fff" />
-    <error-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#d45a48" />
-    <warning-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#d98540" />
+    <error-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#C24839" />
+    <warning-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#fff" back-color="#B95C00" />
     <screen-popup-style font-family="" font-size="" font-bold="false" font-italic="false" text-color="#000" back-color="#fff" />
     <heading1-style font-family="" font-size="x-large" font-bold="false" font-italic="false" text-color="#000" back-color="#fff" />
     <heading2-style font-family="" font-size="large" font-bold="false" font-italic="false" text-color="#2f383c" back-color="#fff" />
@@ -120,7 +120,7 @@
     <show-complete-screen-image>true</show-complete-screen-image>
     <incomplete-stage-color>#7fbfdf</incomplete-stage-color>
     <incomplete-screen-color>#7fbfdf</incomplete-screen-color>
-    <show-incomplete-stage-image>false</show-incomplete-stage-image>
+    <show-incomplete-stage-image>true</show-incomplete-stage-image>
     <show-incomplete-screen-image>false</show-incomplete-screen-image>
     <future-stage-color>#8d8d8d</future-stage-color>
     <show-future-stage-image>true</show-future-stage-image>
@@ -190,6 +190,7 @@
       <message key="pagedir-right-to-left">false</message>
       <message key="delete-instance-text">Remove</message>
       <message key="add-button-text">Add New Instance</message>
+      <message key="add-button-text-short">Add</message>
       <message key="submit-button-text">Submit</message>
       <message key="next-button-text">Next</message>
       <message key="back-button-text">Back</message>
@@ -210,6 +211,10 @@
       <message key="incomplete-stage-image-alt">This stage is not complete</message>
       <message key="submit-progress-text">Please do not leave this screen while data is being submitted...</message>
       <message key="submit-progress-image-alt">Progress indicator</message>
+      <message key="checkpoint-option-screen-title">Checkpoint options for ${rulebase}</message>
+      <message key="checkpoint-exists-text">A checkpoint exists for this interview.</message>
+      <message key="checkpoint-resume-button">Continue</message>
+      <message key="checkpoint-ignore-text">I'd like to {0}start over{1} (and overwrite the existing checkpoint).</message>
       <message key="ControlValueFormatError">This value is in an invalid format.</message>
       <message key="CurrencyValueFormatError">This currency value is in an invalid format. Please enter a value in the form '${e.getExample()}'.</message>
       <message key="NumberValueFormatError">This number value is in an invalid format. Please enter a value in the form '${e.getExample()}'.</message>
@@ -224,6 +229,7 @@
       <message key="MissingValueError">This value is mandatory.</message>
       <message key="SignatureBlankError">Missing mandatory signature.</message>
       <message key="SeedDataError">An error has occurred while loading data and the session can not be created.&lt;br/&gt; For further assistance please contact support.</message>
+      <message key="DynamicDataLoadError">An error has occurred while attempting to dynamically load data into the session.&lt;br/&gt; For further assistance please contact support.</message>
       <message key="DataSaveError">An error has occurred while saving data.&lt;br/&gt; For further assistance please contact support.</message>
       <message key="SessionResumeError">Oops. I tried to resume, but something went wrong.</message>
       <message key="InvalidValueChangeWarning">The value of a read-only or hidden control can not be changed. This value will be discarded.</message>
@@ -249,11 +255,11 @@
       <message key="NoActiveSessionError">This interview session has expired.&lt;br/&gt;&lt;br/&gt;Click &lt;a href="${e.startSessionLink()}"&gt;here&lt;/a&gt; to start a new interview.</message>
       <message key="GenericErrorMessage">An error occurred trying to process your request.&lt;br/&gt;For further assistance please contact support.</message>
       <message key="RenderScreenError">An error occurred attempting to render this screen.</message>
-      <message key="CookiesDisabledError">Policy Automation has detected that cookies are not enabled for this site which will prevent this application from running. Please enable cookies and try again.</message>
-      <message key="RightNowConnectorError">An error has occurred while loading or saving data.&lt;br/&gt; For further assistance please contact support.</message>
+      <message key="ServiceCloudConnectorError">An error has occurred while loading or saving data.&lt;br/&gt; For further assistance please contact support.</message>
       <message key="ContactSaveError">Error saving Contact. Check you have provided a valid email address that is not in use by another user.</message>
       <message key="MissingAgentAuthenticationError">This interview can be used only by logged in Agents in the RightNow Agent Desktop.</message>
       <message key="MissingContactAuthenticationError">This interview can be used only by logged in Contacts in the RightNow Customer Portal.</message>
+      <message key="MissingUserAuthenticationError">This interview can be used only by logged in Contacts or Agents.</message>
       <message key="NoAssociatedContactError">The Interview cannot be started: a Contact associated to '${e.inputTable()}' was not found via '${e.relationshipName()}'.</message>
       <message key="RulebaseNotFoundException">This request is invalid.</message>
       <message key="AuthenticationError">Access denied.</message>
@@ -286,9 +292,38 @@
       <message key="screens-caption-single">Screen {0}</message>
       <message key="screens-caption-multiple">Screen {0} of {1}</message>
       <message key="table-remove-instance-heading">Remove</message>
+      <message key="upload-add-button-text">Add</message>
+      <message key="upload-delete-button-text">Delete</message>
       <message key="unsaved-text-label">This screen may have data that has not been saved.</message>
       <message key="future-stage-image-alt">This stage is unavailable</message>
+      <message key="confirm-navigate-header-text">Confirm Navigation</message>
+      <message key="confirm-navigate-message-text">This screen currently contains errors that are preventing it from being saved. Do you wish to leave this screen and lose your changes?</message>
+      <message key="confirm-navigate-ok-button-text">Yes</message>
+      <message key="confirm-navigate-cancel-button-text">No</message>
+      <message key="language-menu-alt-text">Click to change language</message>
+      <message key="optional-icon-alt-text">This question is optional</message>
     </messages>
+    <interview-theme></interview-theme>
+    <wcag-compliance>AA</wcag-compliance>
+    <automatic-control-focus>true</automatic-control-focus>
+    <submit-progress-image-asset>4b5ccdb0-8536-42ce-9530-6e3f8d6a85e5.gif</submit-progress-image-asset>
+    <show-optional-icon>false</show-optional-icon>
+    <show-error-icon>true</show-error-icon>
+    <optional-image-url></optional-image-url>
+    <language-menu-image-url></language-menu-image-url>
+    <has-control-error-outline>false</has-control-error-outline>
+    <control-error-outline-color>#c70000</control-error-outline-color>
+    <language-menu-display-header>false</language-menu-display-header>
+    <language-menu-display-footer>false</language-menu-display-footer>
+    <radio-size>1.5em</radio-size>
+    <radio-decoration>circle</radio-decoration>
+    <checkbox-decoration>tick</checkbox-decoration>
+    <question-position>above</question-position>
+    <question-width>150</question-width>
+    <page-border-color></page-border-color>
+    <language>
+      <name loc="en-US">English (United States)</name>
+    </language>
   </project-styling>
   <project-formatting />
   <inclusions />
