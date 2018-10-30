@@ -499,6 +499,12 @@
           <parse>s(ver('12.2.7.797'),v(change,t(simple,present,perfect)),sb('the suppliers or purchasers'' contact details',plural),o('since Form 1 was submitted'))</parse>
         </text>
       </attribute>
+      <attribute name="a7b132df-f082-4b79-b255-0539bbdeb2cc" type="boolean">
+        <text>
+          <base>the supply is defined to be of new residential premises</base>
+          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined to be of new residential premises'))</parse>
+        </text>
+      </attribute>
     </entity>
   </entities>
   <relationships></relationships>

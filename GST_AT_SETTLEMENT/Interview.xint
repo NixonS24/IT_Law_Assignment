@@ -73,14 +73,39 @@
         <AttributeInputControl Attribute="99c00618-af7e-4903-bb7f-0bef5a482fd3" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="9e44cb43-d52a-4d1a-959a-9837e815fac3" />
       </Controls>
     </Screen>
-    <Screen Title="Residential Premises" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="40c06611-cc7c-4986-9ea6-ec732b72c7b0">
+    <Screen Title="New Residential Premises" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="relevant" ID="a49622e2-0c27-4125-8854-c3a6dc141c13">
       <ShowScreenExpression ExprType="If" Op="==" Attribute="c81738d2-5310-4793-82dd-e7dcebb638f4">
         <Values>
           <Boolean>false</Boolean>
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="&lt;h4&gt; Potential Residential Land &lt;/h4&gt;" ControlWidth="0" DefaultState="enabled" ID="120d4fb9-cbf4-416c-8f6b-165d62f8c2dd" />
+        <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="1862e328-b76f-4dbb-b834-959d07ae8e4b" />
+        <LabelControl TextStyle="Normal" Caption="Commercial Residential Premises info" ControlWidth="0" DefaultState="enabled" ID="d1246fcc-b6dd-4779-964a-de2a0965af11">
+          <HideIfExpr ExprType="If" Op="==" Attribute="95cab034-4430-490c-99c8-0ac97154a7ab">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
+        <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="34bbaa5b-3bb2-4244-a236-1bb518c7932f" />
+        <LabelControl TextStyle="Normal" Caption="Substantial Rennovation information" ControlWidth="0" DefaultState="enabled" ID="30a93e17-ffca-4af9-bcec-6aa5ac213c7e">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
+      </Controls>
+    </Screen>
+    <Screen Title="Potential Residential Land" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="40c06611-cc7c-4986-9ea6-ec732b72c7b0">
+      <ShowScreenExpression ExprType="If" Op="==" Attribute="a7b132df-f082-4b79-b255-0539bbdeb2cc">
+        <Values>
+          <Boolean>false</Boolean>
+        </Values>
+      </ShowScreenExpression>
+      <Controls>
+        <LabelControl TextStyle="Normal" Caption="This Screenis not MECE - if uncertain it should show but not sure how to get more than one option (or if does not equal true). Or potential intorduce a new variable that checks certain and false" ControlWidth="0" DefaultState="enabled" ID="c2d9885c-3c83-4997-a3ef-1849bffcd355" />
         <AttributeInputControl Attribute="b0999a25-3f22-4f40-ad02-7f024f3b2625" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="b7da88e1-50a2-4e43-9e6f-ddb934944122" />
         <LabelControl TextStyle="Normal" Caption="'Potential residential land' is defined as &quot;land that it is permissable to use for reidential purposes, but that does not contain any building that are residential premises. &lt;i&gt; s. 195-1 GST Act &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="a02512ef-4e38-40d3-88db-c32208940053">
           <HideIfExpr ExprType="Unless" Op="==" Attribute="b0999a25-3f22-4f40-ad02-7f024f3b2625">
@@ -97,18 +122,29 @@
             </Values>
           </HideIfExpr>
         </LabelControl>
-        <AttributeInputControl Attribute="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="fa9fc18f-54cd-4e37-9af7-982bf50ab948" />
-        <AttributeInputControl Attribute="686acc96-07e2-40bc-a173-02f5cfed8024" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="5227c88d-a4b4-45db-a33b-5917068ede7d" />
+        <AttributeInputControl Attribute="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="fa9fc18f-54cd-4e37-9af7-982bf50ab948" />
+        <LabelControl TextStyle="Normal" Caption="Commercial Purpose info" ControlWidth="0" DefaultState="enabled" ID="5c34e6e6-62d5-4dc6-8f1b-e215d39bfa67">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="77ff7e4e-3105-4fed-b79a-b5165eb8cb1b">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
+        <AttributeInputControl Attribute="686acc96-07e2-40bc-a173-02f5cfed8024" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="5227c88d-a4b4-45db-a33b-5917068ede7d" />
+        <LabelControl TextStyle="Normal" Caption="GST Info - maybe GST lookup" ControlWidth="0" DefaultState="enabled" ID="44da751f-61f0-4ea7-b29d-e572c1f573cb">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="686acc96-07e2-40bc-a173-02f5cfed8024">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
         <AttributeInputControl Attribute="5be68709-95fc-4218-962c-1cb7a8909d72" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="9ece3bdc-9b7b-48c5-a4c7-430fa9bb3496">
           <HideIfExpr ExprType="Unless" Op="==" Attribute="686acc96-07e2-40bc-a173-02f5cfed8024">
             <Values>
-              <Boolean>true</Boolean>
+              <Boolean>false</Boolean>
             </Values>
           </HideIfExpr>
         </AttributeInputControl>
-        <LabelControl TextStyle="Normal" Caption="&lt;h4&gt; New Residential Premises &lt;/h4&gt;" ControlWidth="0" DefaultState="enabled" ID="10e8058b-3efd-4efa-8f16-7d4c609b2893" />
-        <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="c499c5ba-96bc-438b-8e68-13a685d17678" />
-        <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="2018" YearEnd="1918" HideCaption="false" ButtonHorizontalLayout="true" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="cc5d1993-cee4-43c9-b3a6-b5d260f8f767" />
       </Controls>
     </Screen>
     <Screen Title="Transitional Rules" SubmitAction="Next" CheckpointAfterSubmit="false" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" IsAutomatic="false" ShowCondition="only-if" ID="f01bf0dd-3724-4d41-88c8-990c054264bd">
@@ -239,6 +275,7 @@
       <ScreenOrderScreen Screen="77151818-671a-48c8-89a8-a4f42ef005d9" />
       <ScreenOrderScreen Screen="fa908d44-4471-450b-93db-c232b4d70845" />
       <ScreenOrderScreen Screen="0532b4ed-cf07-4acc-86a9-5e4b6f769d61" />
+      <ScreenOrderScreen Screen="a49622e2-0c27-4125-8854-c3a6dc141c13" />
       <ScreenOrderScreen Screen="40c06611-cc7c-4986-9ea6-ec732b72c7b0" />
       <ScreenOrderScreen Screen="f01bf0dd-3724-4d41-88c8-990c054264bd" />
     </ScreenOrderItemContainer>
