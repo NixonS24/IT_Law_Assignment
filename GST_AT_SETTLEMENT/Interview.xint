@@ -3,9 +3,9 @@
   <cors />
   <documents UsePDFA="false" />
   <screens>
-    <Screen Title="Welcome to GST AT Settlement" SubmitAction="Next" CheckpointAfterSubmit="false" DynamicErrors="true" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" QuestionLayout="" QuestionWidth="150" IsAutomatic="false" ShowCondition="always" ID="ae93748a-381d-4e26-9843-19dfa7f16d44">
+    <Screen Title="Welcome to GST at Settlement" SubmitAction="Next" CheckpointAfterSubmit="false" DynamicErrors="true" SubmitRedirectURL="" HasBackButton="false" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" QuestionLayout="" QuestionWidth="150" IsAutomatic="false" ShowCondition="always" ID="ae93748a-381d-4e26-9843-19dfa7f16d44">
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="This RuleBase, attempts to organise the GST notification and withholding requirements for sellers and purchasers of residential property into an easy-to-use Program" ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
+        <LabelControl TextStyle="Normal" Caption="This RuleBase, attempts to organise the GST notification and withholding requirements for sellers and purchasers of residential property into an easy-to-use Program." ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
         <LabelControl TextStyle="Normal" Caption="Importantly, we will help you identify:  &#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;The types of suppliers for which purchasers are required to pay;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;When a purchaser is required to pay;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;The amount the purchaser is required to pay; &lt;/li&gt;&#xD;&#xA;&lt;li&gt;The requirements for a vendor to provide a notice to the purchaser;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;The penalties that may apply to vendors and purchaser, and &lt;/li&gt;&#xD;&#xA;&lt;li&gt;The document(s) that must be sent to the ATO including dates. &lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;" ControlWidth="0" DefaultState="enabled" ID="f13983a8-4f2c-4f7e-9783-0f058b01e353" />
         <LabelControl TextStyle="Normal" Caption="To find out more about the legislative scheme please &lt;a href=&quot;https://www.ato.gov.au/law/view/fulldocument?filename=PAC20180023#PAC/20180023/00001&quot;&gt; click here &lt;/a&gt;" ControlWidth="0" DefaultState="enabled" ID="e615d72d-9abf-4487-92f7-91547efc5e0b" />
       </Controls>
@@ -42,11 +42,11 @@
       </ShowScreenExpression>
       <Controls>
         <LabelControl TextStyle="Normal" Caption="This section applies to &lt;b&gt;purchasers&lt;/b&gt;. If you are not a purchaser for the purposes of the Act please go back." ControlWidth="0" DefaultState="enabled" ID="5dafb3b7-dada-4f64-97bd-c61b854aedf5" />
-        <LabelControl TextStyle="Normal" Caption="The purchaser will be liable to pay an amount of the commissiner if" ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
+        <LabelControl TextStyle="Normal" Caption="The purchaser will be liable to pay an amount of the Commissioner if the following criteria are met." ControlWidth="0" DefaultState="enabled" ID="b7f0860e-fb22-44f8-b2a3-68b68477a53a" />
         <AttributeInputControl Attribute="44ab2e77-072e-4230-9c3c-b668565a9b17" DefaultValue="More Info" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the purchaser a recipient of a taxable supply?" ControlWidth="0" DefaultState="enabled" ID="6b40a5ce-6b1e-486b-865a-84f3a9140f94" />
         <AttributeInputControl Attribute="6948a391-a050-4073-8e1e-cbe3e96c7511" DefaultValue="More Info" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the supply by way of sale of long-term lease?" ControlWidth="0" DefaultState="enabled" ID="613eae30-07f5-4189-97de-4151e92b4810" />
         <AttributeInputControl Attribute="c81738d2-5310-4793-82dd-e7dcebb638f4" DefaultValue="More Info" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the supply of new residential premises or of potential residential land?" ControlWidth="0" DefaultState="enabled" ID="ced0ce3b-77eb-4990-8c6f-5a8c7e29ff06" />
-        <LabelControl TextStyle="Normal" Caption="&lt;h4&gt; Transition Rules &lt;/h4&gt; It is also important to note that the ATO has instiuted transitional rules that may apply in some instance. Whille this generally will not apply, it may if the contract was entered into &lt;b&gt; before 1 July 2018 &lt;/b&gt;." ControlWidth="0" DefaultState="enabled" ID="6f734c94-0ff4-4dc2-a070-764da7eb7127" />
+        <LabelControl TextStyle="Normal" Caption="&lt;h3&gt; Transition Rules &lt;/h3&gt; It is also important to note that the ATO has instiuted transitional rules that may apply in some instance. While this generally will not apply, it may if the contract was entered into &lt;b&gt; before 1 July 2018 &lt;/b&gt;." ControlWidth="0" DefaultState="enabled" ID="6f734c94-0ff4-4dc2-a070-764da7eb7127" />
         <AttributeInputControl Attribute="e25f1b49-5eda-401c-89d2-1939ed6b6030" DefaultValue="No" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Do the Transitional Rules apply?" ControlWidth="0" DefaultState="enabled" ID="8a5a09b4-20f1-446d-8bb8-cae023ae1bd9" />
       </Controls>
     </Screen>
@@ -57,36 +57,90 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="These questions are used to determine whether the purcahse is the receipient of a taxable supply for the purpose of the act &lt;i&gt;defintion &lt;/i&gt;/" ControlWidth="0" DefaultState="enabled" ID="70ac8d40-a8f7-4543-9bb8-555cc88e25eb" />
-        <AttributeInputControl Attribute="c8c2866f-8d6b-4e10-9a3b-7d9cc37b36ac" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="676ea773-875e-4208-b81c-e6245598b7a0" />
-        <LabelControl TextStyle="Normal" Caption="An entity means any of the following:&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;an individual;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a body coporate;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a body politic;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a partnership;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;any other unincorporated association or body of persons;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a trust; or&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a superannuation fund.&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;Generally it will cover all types of legal persons - &lt;br&gt;&lt;br&gt; &lt;i&gt; A New Tax System (Goods and Services Tax) Act 1999 s 184-1(1) &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="b15e166e-6a2f-4849-8580-17d43f4550cb">
-          <HideIfExpr ExprType="Unless" Op="==" Attribute="c8c2866f-8d6b-4e10-9a3b-7d9cc37b36ac">
+        <LabelControl TextStyle="Normal" Caption="These questions are used to determine whether the purcahse is the receipient of a taxable supply.  " ControlWidth="0" DefaultState="enabled" ID="70ac8d40-a8f7-4543-9bb8-555cc88e25eb" />
+        <LabelControl TextStyle="Normal" Caption="Unless otherwise mentioned, references refer to &lt;i&gt; A New Tax System (Goods and Services Tax) Act 1999&lt;/i&gt;." ControlWidth="0" DefaultState="enabled" ID="b1cb9062-d3e5-4f3b-855b-994e5f945bbd" />
+        <InterviewContainerControl HorizontalLayout="false" QuestionLayout="" QuestionWidth="150" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="ec472075-5961-47f8-8920-1a5f7d4b63d5">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8">
             <Values>
-              <uncertain-val />
+              <Boolean>false</Boolean>
             </Values>
           </HideIfExpr>
-        </LabelControl>
-        <AttributeInputControl Attribute="a8c1bfbf-314b-4ae2-b406-24cf9df35ba7" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="c6dd4aa3-9019-40a4-917a-30283029c234" />
-        <LabelControl TextStyle="Normal" Caption="Consideration includes any payment, or any act or forebearance, in connection with a supply of anything or in response to of for the inducement of supply of anything. Further, &lt;br&gt; &lt;br&gt;&#xD;&#xA;&#xD;&#xA;&lt;b&gt; Sinking Funds &amp;amp; Body Coporate &lt;/b&gt; See &lt;i&gt; Body Coporate, Villa Edgewater Cts 23092 v FCT (2004) &lt;/i&gt; (2004) 55 ATR 1162. &lt;br&gt;&#xD;&#xA;&lt;b&gt; Voluntary &lt;/b&gt; - Generally, it does not matter whether the consideration was voluntary or not; &lt;i&gt; s 9 -15(2) &lt;/i&gt; &lt;br&gt;&#xD;&#xA;&lt;b&gt; Court Ordered &lt;/b&gt; - Includes complinance with an order of, or a settelment relating to proceedings before a court, tribunal or other body that has the power to make orders; &lt;i&gt; s 9-15(2A) &lt;/i&gt; &lt;br&gt;&#xD;&#xA;&lt;b&gt;Charity &lt;/b&gt; A gift provided voluntarily, to a non-profit body will generally not be considered the provision of consideration so long as the provider does not receive an advantage of material character &lt;i&gt; Taxation Ruling GSTR 2000/11 paras 57-65  &lt;/i&gt;; &lt;i&gt; Federal Commissioner of Taxation v McPhail &lt;/i&gt; (1968) 117 CLR 111." ControlWidth="0" DefaultState="enabled" ID="67b9604c-bc98-4621-ae57-518e728765b1">
-          <HideIfExpr ExprType="Unless" Op="==" Attribute="a8c1bfbf-314b-4ae2-b406-24cf9df35ba7">
-            <Values>
-              <uncertain-val />
-            </Values>
-          </HideIfExpr>
-        </LabelControl>
-        <AttributeInputControl Attribute="ac7c5d90-ffac-4404-98f9-4ab719de6ba5" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="ac766a5b-6001-47da-80fa-e1fe65c68b46" />
-        <AttributeInputControl Attribute="e8839024-c624-48ba-aaae-490f15784961" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="eeb8bd4b-ed02-4563-a4fb-0b049f8b1a6f" />
-        <AttributeInputControl Attribute="b5d60d2e-5ab1-4fae-82d7-647983249129" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3ba595d9-dc1e-407a-ad7b-1c5e3ff0d7f2" />
+          <Controls>
+            <InterviewContainerControl HorizontalLayout="false" QuestionLayout="" QuestionWidth="150" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="55e7e2a1-07eb-45b6-b898-f75e5a8fb29f">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="d1daa143-32b8-4bc9-ac16-3fa668ec60c6">
+                <Values>
+                  <Boolean>false</Boolean>
+                </Values>
+              </HideIfExpr>
+              <Controls>
+                <AttributeInputControl Attribute="c8c2866f-8d6b-4e10-9a3b-7d9cc37b36ac" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="676ea773-875e-4208-b81c-e6245598b7a0" />
+                <LabelControl TextStyle="Normal" Caption="An entity means any of the following:&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;an individual;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a body coporate;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a body politic;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a partnership;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;any other unincorporated association or body of persons;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a trust; or&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a superannuation fund.&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;Generally it will cover all types of legal persons. &lt;br&gt; &lt;i&gt; s 184-1(1) &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="b15e166e-6a2f-4849-8580-17d43f4550cb">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="c8c2866f-8d6b-4e10-9a3b-7d9cc37b36ac">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+                <AttributeInputControl Attribute="a8c1bfbf-314b-4ae2-b406-24cf9df35ba7" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="c6dd4aa3-9019-40a4-917a-30283029c234" />
+                <LabelControl TextStyle="Normal" Caption="Consideration includes any payment, or any act or forebearance, in connection with a supply of anything or in response to or for the inducement of a supply of anything. &lt;br&gt;&lt;br&gt; &lt;b&gt;However, a purchaser does not have a GST witholding obligation at the time they pay a genuine deposit.&lt;/b&gt; &lt;i&gt; ss 14-250(4) &lt;/i&gt; &lt;br&gt; &lt;br&gt;&#xD;&#xA;For futher information on: &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;&lt;b&gt; Sinking Funds &amp;amp; Body Coporate &lt;/b&gt; See &lt;i&gt; Body Coporate, Villa Edgewater Cts 23092 v FCT (2004) &lt;/i&gt; (2004) 55 ATR 1162. &lt;br&gt;&#xD;&#xA;&lt;b&gt; Voluntary &lt;/b&gt; - Generally, it does not matter whether the consideration was voluntary or not; &lt;i&gt; s 9 -15(2) &lt;/i&gt; &lt;br&gt;&#xD;&#xA;&lt;b&gt; Court Ordered &lt;/b&gt; - Includes complinance with an order of, or a settelment relating to proceedings before a court, tribunal or other body that has the power to make orders; &lt;i&gt; s 9-15(2A) &lt;/i&gt; &lt;br&gt;&#xD;&#xA;&lt;b&gt;Charity &lt;/b&gt; A gift provided voluntarily, to a non-profit body will generally not be considered the provision of consideration so long as the provider does not receive an advantage of material character &lt;i&gt; Taxation Ruling GSTR 2000/11 paras 57-65  &lt;/i&gt;; &lt;i&gt; Federal Commissioner of Taxation v McPhail &lt;/i&gt; (1968) 117 CLR 111." ControlWidth="0" DefaultState="enabled" ID="67b9604c-bc98-4621-ae57-518e728765b1">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="a8c1bfbf-314b-4ae2-b406-24cf9df35ba7">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+                <AttributeInputControl Attribute="ac7c5d90-ffac-4404-98f9-4ab719de6ba5" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="ac766a5b-6001-47da-80fa-e1fe65c68b46" />
+                <LabelControl TextStyle="Normal" Caption="An enterprise is an activity, or a series of activities, done:&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;On a regular or continuous basis, in the form of a lease, licence or other grant of an interest in property&lt;/li&gt;&#xD;&#xA;&lt;li&gt;In the form a business - this includes any profession, trade employment, vocation or calling but does not include occupation as an employee;&lt;/li&gt;&lt;i&gt;s 195-1&lt;/i&gt;&#xD;&#xA;&lt;li&gt;In the form of an adventure or concern in th enature of trade&lt;/li&gt;&lt;i&gt;Taxation Ruling MT 2000/1 para 25 &lt;/i&gt;&#xD;&#xA;&lt;/ol&gt;" ControlWidth="0" DefaultState="enabled" ID="eb85d887-737c-48f0-8ec5-a2eba1b9a97e">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="ac7c5d90-ffac-4404-98f9-4ab719de6ba5">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+                <LabelControl TextStyle="Normal" Caption="'Carrying on an enterprise' includes doing anything in the course of the commencement or termination of the enterprise. &lt;i&gt;s 195-1 &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="efdae0ce-0592-4c9d-8241-6e1790c796c3">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="ac7c5d90-ffac-4404-98f9-4ab719de6ba5">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+                <AttributeInputControl Attribute="e8839024-c624-48ba-aaae-490f15784961" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="eeb8bd4b-ed02-4563-a4fb-0b049f8b1a6f" />
+                <LabelControl TextStyle="Normal" Caption="A supply of real property is connected with Australia if the real property or the land to which the real property relates is in Australia. &lt;i&gt; s9-25(4)&lt;/i&gt; &amp;amp; &lt;i&gt; Taxation Ruling GSTD 2004/3 para 2 &lt;/i&gt; &#xD;&#xA;&#xD;&#xA;&lt;br&gt;&lt;br&gt;&#xD;&#xA;Real property includes:&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;any interest in or right over land; &lt;/li&gt;&#xD;&#xA;&lt;li&gt;a person right to call for or be granted any interst in or right over land; or&lt;/li&gt;&#xD;&#xA;&lt;li&gt;a licence to occupy land or any other contractual right exercisable over or in relation to land&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt; &lt;i&gt;s 195-1&lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="0d002e5d-2e77-496a-b537-a37d00fbce9e">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="e8839024-c624-48ba-aaae-490f15784961">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+                <AttributeInputControl Attribute="b5d60d2e-5ab1-4fae-82d7-647983249129" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="3ba595d9-dc1e-407a-ad7b-1c5e3ff0d7f2" />
+                <LabelControl TextStyle="Normal" Caption="Generally, where an entity is carrying on an enterprise, it is required to be registered for GST if its annual turnover is greater than or equal to $75,000 (AUD). &lt;i&gt;s 23-5; 23-25 &lt;/i&gt;&lt;br&gt;&lt;br&gt;&#xD;&#xA;There are some instances when an entity will be required to be registered for GST even if its annual turnover is below $75,000. see &lt;i&gt; s 57-20, 195-1, 144-5 &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="13961545-2633-4d6a-b81b-fbf4b6ca694b">
+                  <HideIfExpr ExprType="Unless" Op="==" Attribute="b5d60d2e-5ab1-4fae-82d7-647983249129">
+                    <Values>
+                      <uncertain-val />
+                    </Values>
+                  </HideIfExpr>
+                </LabelControl>
+              </Controls>
+            </InterviewContainerControl>
+          </Controls>
+        </InterviewContainerControl>
         <LabelControl TextStyle="Normal" Caption="&lt;h3&gt; Exceptions &lt;/h3&gt;" ControlWidth="0" DefaultState="enabled" ID="d12c643d-86ed-4b0d-9720-1b247e320e9a" />
-        <AttributeInputControl Attribute="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="44a9796c-5a4f-478f-a291-12374de597c6" />
-        <LabelControl TextStyle="Normal" Caption="Explanation of GST-free supply?" ControlWidth="0" DefaultState="enabled" ID="77984746-ddb0-4d4c-84ff-f4c319ca639e">
+        <AttributeInputControl Attribute="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="45df3f30-aed6-4294-a28d-086a867d711c" />
+        <LabelControl TextStyle="Normal" Caption="GST-free supplies are important because: &#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;The making of these supplies are not liable for GST; and &lt;/li&gt; &lt;i&gt; s 11 9-5, 13-5, 13-10(b) &lt;/i&gt;&#xD;&#xA;&lt;li&gt; Acquisitions by the entity to make GST-free supplies attract input tax credits event thought its supplies are not liable for GST. &lt;/li&gt; &lt;i&gt; ss 11-5, 11-15 &lt;/i&gt;&#xD;&#xA;&lt;/ol&gt; &#xD;&#xA;There are 16 exceptions provided in total provided for in Subdivision 38. The exceptions we think will be most relevant are:&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;GST-free supply of going concern. For this exception to be triggered the supplier and receipant must have agreed in writing that the supply is of going concern (therefore look to the contract). For futher information see &lt;i&gt;Subdivision 38-J; Goods and Services Tax Ruling 2002/5; (Adminstrative Appeal Tribual) Debonne Holdings Pty Ptd v Commissioner of Taxation&lt;/i&gt;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;GST-free Farmland. For this exception to be triggered, the land must be on which a farming business has been carried on for at least five year and will usually involve subdivision. For further information see &lt;i&gt; Subdivision 38-0&lt;/i&gt;&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;" ControlWidth="0" DefaultState="enabled" ID="3d4128b2-f1b5-4f6b-9521-1a3f3a17d457">
           <HideIfExpr ExprType="Unless" Op="==" Attribute="d1daa143-32b8-4bc9-ac16-3fa668ec60c6">
             <Values>
               <uncertain-val />
             </Values>
           </HideIfExpr>
         </LabelControl>
-        <AttributeInputControl Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="0ef5b9d0-63ae-4b76-aa95-9e374bb6094c" />
+        <AttributeInputControl Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="d179b311-a64d-49e8-a380-e54c3d470c4e" />
+        <LabelControl TextStyle="Normal" Caption="GST-free supplies are important because: &#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;The making of these supplies are not liable for GST; and &lt;/li&gt; &lt;i&gt; s 11 9-5, 13-5, 13-10(b) &lt;/i&gt;&#xD;&#xA;&lt;li&gt; Acquisitions by the entity to make GST-free supplies attract input tax credits event thought its supplies are not liable for GST. &lt;/li&gt; &lt;i&gt; ss 11-5, 11-15 &lt;/i&gt;&#xD;&#xA;&lt;/ol&gt; &#xD;&#xA;There are 5 exceptions in total provided for in Subdivision 40. The one we think is the most relevant is the following.&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;Residential properties. However, this exception does not apply to vacant land, new residential premises and commercial premises. &lt;b&gt; We deal with this in more detail in our 'new residential premises' &amp;amp; 'potential residental land' section &lt;/b&gt; &lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;&#xD;&#xA;" ControlWidth="0" DefaultState="enabled" ID="5944a218-e09b-45ac-a1e3-891f4039a1f6">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="e93da0a1-d784-40c0-acd6-48d31f8a5dd8">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
       </Controls>
     </Screen>
     <Screen Title="Sale or Long Term Lease" SubmitAction="Next" CheckpointAfterSubmit="false" DynamicErrors="true" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" QuestionLayout="" QuestionWidth="150" IsAutomatic="false" ShowCondition="only-if" ID="0532b4ed-cf07-4acc-86a9-5e4b6f769d61">
@@ -96,8 +150,34 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <LabelControl TextStyle="Normal" Caption="Maybe some general contract law principles to add - TODO" ControlWidth="0" DefaultState="enabled" ID="e4a68a8f-8613-4ce9-9e32-122daca8cb45" />
-        <AttributeInputControl Attribute="99c00618-af7e-4903-bb7f-0bef5a482fd3" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="9e44cb43-d52a-4d1a-959a-9837e815fac3" />
+        <LabelControl TextStyle="Normal" Caption="Unless otherwise mentioned, references refer to &lt;i&gt; A New Tax System (Goods and Services Tax) Act 1999&lt;/i&gt;." ControlWidth="0" DefaultState="enabled" ID="72af672b-7d4f-444a-9092-ff50e1bfad10" />
+        <AttributeInputControl Attribute="8daeb65e-74e8-4796-9de6-8f33623838a2" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="77d8f2d8-a7c0-4447-ac26-82905326be30" />
+        <LabelControl TextStyle="Normal" Caption="Supply generally encompasses the value added in any transactions in each stage of the commercial chain of dealings of goods, services and other things. It specifically includes a grant, assignment of surrender of real property (&lt;i&gt;s 9-10(2)(d)&lt;/i&gt;) but is a very broad and encompassing defintion and will rarely if ever be in question. &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;For further information see: &lt;i&gt; Good and Services Tax Ruling GSTR 2006/9; s 9-10 &lt;/i&gt; " ControlWidth="0" DefaultState="enabled" ID="072e7ed4-6662-4e93-8457-158d536fec15">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="8daeb65e-74e8-4796-9de6-8f33623838a2">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
+        <AttributeInputControl Attribute="501d206a-47a1-4599-a23a-db53fd4eb29c" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="18ebcb9f-36e4-438f-b489-ffbc83a4c5b6" />
+        <LabelControl TextStyle="Normal" Caption="'Sale' and 'sold' are not defined in the GST Act. The ordinary meaning of 'sale' in this context, is the transfer, or agreement to transfer, property to a buyer for a price/consideration. The Australian Taxation Office further considers that 'sale' and 'sold' refer to the disposal of the land held in its &lt;b&gt;entirety&lt;/b&gt; for consideration (deposit is not likely not sufficient and will be caught by 'recipient of taxable supply'). " ControlWidth="0" DefaultState="enabled" ID="a000d321-78af-4ecc-bc12-3bff46eccca7" />
+        <InterviewContainerControl HorizontalLayout="false" QuestionLayout="" QuestionWidth="150" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="c22bc01d-13b2-441a-9bbd-6e7e7c8145f6">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="501d206a-47a1-4599-a23a-db53fd4eb29c">
+            <Values>
+              <Boolean>false</Boolean>
+            </Values>
+          </HideIfExpr>
+          <Controls>
+            <AttributeInputControl Attribute="9a1f5a4d-6014-4e87-ab2d-e3150108f882" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="d52f61d6-47f6-4e47-8ee1-05b48fad8f2f" />
+            <LabelControl TextStyle="Normal" Caption="&lt;b&gt;&lt;i&gt;long-term lease&lt;/i&gt;&lt;/b&gt; means a supply by way of lease, hire or licence (including a renewal or extension of a lease, hire or licence) for at least 50 year if: &#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;at the time of the lease, hire or licence, or the renewal or extension of the lease, hire or licence, it was reasonable to expect that it would continue for 50 years; and&lt;/li&gt;&#xD;&#xA;&lt;li&gt;unless the spplier is an Australian government agency the terms of the lease, hire or licence, or the renewal or extension of the lease, hire or licence, as they apply to the recipient are substantially the same as those under whihc the supplier held the premises.&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;&lt;i&gt;s 195-1 &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="3c82f7d0-104a-42c3-9dcc-498d40f1a249">
+              <HideIfExpr ExprType="Unless" Op="==" Attribute="9a1f5a4d-6014-4e87-ab2d-e3150108f882">
+                <Values>
+                  <uncertain-val />
+                </Values>
+              </HideIfExpr>
+            </LabelControl>
+          </Controls>
+        </InterviewContainerControl>
       </Controls>
     </Screen>
     <Screen Title="New Residential Premises" SubmitAction="Next" CheckpointAfterSubmit="false" DynamicErrors="true" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" QuestionLayout="" QuestionWidth="150" IsAutomatic="false" ShowCondition="relevant" ID="a49622e2-0c27-4125-8854-c3a6dc141c13">
@@ -107,7 +187,13 @@
         </Values>
       </ShowScreenExpression>
       <Controls>
-        <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="1862e328-b76f-4dbb-b834-959d07ae8e4b" />
+        <LabelControl TextStyle="Normal" Caption="&lt;h3&gt; 'New residential premises&quot; &lt;/h3&gt;" ControlWidth="0" DefaultState="enabled" ID="f4c5dc8b-6f35-4093-9019-9839f9774543" />
+        <AttributeInputControl Attribute="8966782b-6acc-4088-a2ea-2ff45216d2ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the supply defined as a ‘new residential premises'?" ControlWidth="0" DefaultState="enabled" ID="56a06bc7-8d27-4fe0-892a-c3177e505e0d" />
+        <LabelControl TextStyle="Normal" Caption="New Label" ControlWidth="0" DefaultState="enabled" ID="9e576755-90a1-48c1-942d-18bef44e91ea" />
+        <LabelControl TextStyle="Normal" Caption="&lt;h3&gt;Exception&lt;/h3&gt;" ControlWidth="0" DefaultState="enabled" ID="7b9fb89b-607f-40be-81ee-ecf3e5280ccf" />
+        <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="b7f0e38f-4151-41cc-bc3e-2016f7797263" />
+        <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="a53b2dd1-7663-402e-aef0-e56df66a552e" />
+        <LabelControl TextStyle="Normal" Caption="the new GST-at-Settlement provisions may overlap into a seperate case where 'new residential premises' and 'commercial residential premises' will be no longer be covered by this exception. &lt;i&gt; s 14-250 &lt;/i&gt;This may displace some of the existing law and Taxation Rulings including&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;'new residential premises' - &lt;i&gt;Goods and Services Tax Ruling GSTR 2003/03&lt;/i&gt;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;'residential premises' - &lt;i&gt;Goods and Services Tax Ruling GSTR 2012/5&lt;/i&gt;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;'commercial residential premises' - &lt;i&gt;Goods and Services GSTR 2012/6&lt;/i&gt;&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;" ControlWidth="0" DefaultState="enabled" ID="27ebb730-0525-4f3e-91c1-7ae799bb86d5" />
         <LabelControl TextStyle="Normal" Caption="Commercial Residential Premises info" ControlWidth="0" DefaultState="enabled" ID="d1246fcc-b6dd-4779-964a-de2a0965af11">
           <HideIfExpr ExprType="If" Op="==" Attribute="95cab034-4430-490c-99c8-0ac97154a7ab">
             <Values>
@@ -115,7 +201,6 @@
             </Values>
           </HideIfExpr>
         </LabelControl>
-        <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" DefaultValue="false" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="34bbaa5b-3bb2-4244-a236-1bb518c7932f" />
         <LabelControl TextStyle="Normal" Caption="Substantial Rennovation information" ControlWidth="0" DefaultState="enabled" ID="30a93e17-ffca-4af9-bcec-6aa5ac213c7e">
           <HideIfExpr ExprType="Unless" Op="==" Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd">
             <Values>
