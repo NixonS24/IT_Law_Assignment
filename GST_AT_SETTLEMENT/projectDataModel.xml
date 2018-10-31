@@ -98,10 +98,10 @@
           <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the sale of the residential premises',singular),o('input taxes'))</parse>
         </text>
       </attribute>
-      <attribute name="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" type="boolean">
+      <attribute name="d1daa143-32b8-4bc9-ac16-3fa668ec60c6" type="boolean" validation-message="Invalid value.">
         <text>
           <base>the sale is a GST-free supply</base>
-          <parse>s(ver('12.2.7.797'),v(be,t(simple,present,normal)),sb('the sale',singular),o('a GST-free supply'))</parse>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the sale',singular),o('a GST-free supply'))</parse>
         </text>
       </attribute>
       <attribute name="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" type="boolean">
@@ -539,6 +539,48 @@
         <text>
           <base>the entity is registered, or required to be registered, for GST</base>
           <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the entity',singular),o('registered, or required to be registered, for GST'))</parse>
+        </text>
+      </attribute>
+      <attribute name="eec2d1e5-d826-480d-862f-a218b3f94d1e" type="boolean">
+        <text>
+          <base>the sale is a not GST-free supply</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the sale',singular),o('a not GST-free supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="8daeb65e-74e8-4796-9de6-8f33623838a2" type="boolean">
+        <text>
+          <base>the transaction is defined as a supply</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the transaction',singular),o('defined as a supply'))</parse>
+        </text>
+      </attribute>
+      <attribute name="501d206a-47a1-4599-a23a-db53fd4eb29c" type="boolean">
+        <text>
+          <base>the supply is by way of sale</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the supply',singular),o('by way of sale'))</parse>
+        </text>
+      </attribute>
+      <attribute name="9a1f5a4d-6014-4e87-ab2d-e3150108f882" type="boolean">
+        <text>
+          <base>the supply is by way of long-term lease</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the supply',singular),o('by way of long-term lease'))</parse>
+        </text>
+      </attribute>
+      <attribute name="8966782b-6acc-4088-a2ea-2ff45216d2ab" type="boolean">
+        <text>
+          <base>the supply is defined as a ‘new residential premises'</base>
+          <parse>s(ver('12.2.12.131'),v(be,t(simple,present,normal)),sb('the supply',singular),o('defined as a ‘new residential premises'''))</parse>
+        </text>
+      </attribute>
+      <attribute name="2ffbff71-1623-4a7e-8464-7c71f4690bb6" type="boolean">
+        <text>
+          <base>they have not previously been sold as a residential premises (other than commercial residential premises)</base>
+          <parse>s(ver('12.2.12.131'),v(have,t(simple,present,normal)),sb('they',plural),o('not previously been sold as a residential premises (other than commercial residential premises)'))</parse>
+        </text>
+      </attribute>
+      <attribute name="c43e3d0b-f6c3-4043-8d88-9aa94a48b395" type="boolean">
+        <text>
+          <base>it has not previously been sold as a residential premises (other than commercial residential premises)</base>
+          <parse>s(ver('12.2.12.131'),v(have,t(simple,present,normal)),sb('it',singular),o('not previously been sold as a residential premises (other than commercial residential premises)'))</parse>
         </text>
       </attribute>
     </entity>
