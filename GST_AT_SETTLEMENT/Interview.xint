@@ -8,6 +8,7 @@
         <LabelControl TextStyle="Normal" Caption="This RuleBase, attempts to organise the GST notification and withholding requirements for sellers and purchasers of residential property into an easy-to-use Program." ControlWidth="0" DefaultState="enabled" ID="1ac39fc0-ad3a-4682-b4e2-46898f21ec70" />
         <LabelControl TextStyle="Normal" Caption="Importantly, we will help you identify:  &#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;The types of suppliers for which purchasers are required to pay;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;When a purchaser is required to pay;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;The amount the purchaser is required to pay; &lt;/li&gt;&#xD;&#xA;&lt;li&gt;The requirements for a vendor to provide a notice to the purchaser;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;The penalties that may apply to vendors and purchaser, and &lt;/li&gt;&#xD;&#xA;&lt;li&gt;The document(s) that must be sent to the ATO including dates. &lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;" ControlWidth="0" DefaultState="enabled" ID="f13983a8-4f2c-4f7e-9783-0f058b01e353" />
         <LabelControl TextStyle="Normal" Caption="To find out more about the legislative scheme please &lt;a href=&quot;https://www.ato.gov.au/law/view/fulldocument?filename=PAC20180023#PAC/20180023/00001&quot;&gt; click here &lt;/a&gt;" ControlWidth="0" DefaultState="enabled" ID="e615d72d-9abf-4487-92f7-91547efc5e0b" />
+        <LabelControl TextStyle="Normal" Caption="Finallly, unless otherwise stated references will refer to &lt;i&gt; A New Tax System (Goods and Services Tax) Act 1999 (Cth) &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="4ac7d0b6-b90f-4424-913c-c50508a023e2" />
       </Controls>
     </Screen>
     <Screen Title="Licence" SubmitAction="Next" CheckpointAfterSubmit="false" DynamicErrors="true" SubmitCaptionOverride="I Agree" SubmitRedirectURL="" HasBackButton="true" ShowExitButton="true" ShowProgressStages="true" ShowRestartButton="true" PublicName="" QuestionLayout="" QuestionWidth="150" IsAutomatic="false" ShowCondition="always" ID="b40a3f5f-056e-4ab1-9ba6-53a798e79966">
@@ -160,7 +161,13 @@
           </HideIfExpr>
         </LabelControl>
         <AttributeInputControl Attribute="501d206a-47a1-4599-a23a-db53fd4eb29c" DefaultValue="true" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="optional" ID="18ebcb9f-36e4-438f-b489-ffbc83a4c5b6" />
-        <LabelControl TextStyle="Normal" Caption="'Sale' and 'sold' are not defined in the GST Act. The ordinary meaning of 'sale' in this context, is the transfer, or agreement to transfer, property to a buyer for a price/consideration. The Australian Taxation Office further considers that 'sale' and 'sold' refer to the disposal of the land held in its &lt;b&gt;entirety&lt;/b&gt; for consideration (deposit is not likely not sufficient and will be caught by 'recipient of taxable supply'). " ControlWidth="0" DefaultState="enabled" ID="a000d321-78af-4ecc-bc12-3bff46eccca7" />
+        <LabelControl TextStyle="Normal" Caption="'Sale' and 'sold' are not defined in the GST Act. The ordinary meaning of 'sale' in this context, is the transfer, or agreement to transfer, property to a buyer for a price/consideration. The Australian Taxation Office further considers that 'sale' and 'sold' refer to the disposal of the land held in its &lt;b&gt;entirety&lt;/b&gt; for consideration (deposit is not likely not sufficient and will be caught by 'recipient of taxable supply'). &lt;i&gt; Goods and Services Tax GSTR 2003/03 &lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="a000d321-78af-4ecc-bc12-3bff46eccca7">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="501d206a-47a1-4599-a23a-db53fd4eb29c">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
         <InterviewContainerControl HorizontalLayout="false" QuestionLayout="" QuestionWidth="150" Caption="Container" ControlWidth="0" DefaultState="enabled" ID="c22bc01d-13b2-441a-9bbd-6e7e7c8145f6">
           <HideIfExpr ExprType="Unless" Op="==" Attribute="501d206a-47a1-4599-a23a-db53fd4eb29c">
             <Values>
@@ -188,8 +195,14 @@
       </ShowScreenExpression>
       <Controls>
         <LabelControl TextStyle="Normal" Caption="&lt;h3&gt; 'New residential premises&quot; &lt;/h3&gt;" ControlWidth="0" DefaultState="enabled" ID="f4c5dc8b-6f35-4093-9019-9839f9774543" />
-        <AttributeInputControl Attribute="8966782b-6acc-4088-a2ea-2ff45216d2ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the supply defined as a ‘new residential premises'?" ControlWidth="0" DefaultState="enabled" ID="56a06bc7-8d27-4fe0-892a-c3177e505e0d" />
-        <LabelControl TextStyle="Normal" Caption="New Label" ControlWidth="0" DefaultState="enabled" ID="9e576755-90a1-48c1-942d-18bef44e91ea" />
+        <AttributeInputControl Attribute="8966782b-6acc-4088-a2ea-2ff45216d2ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" Caption="Is the supply defined as a ‘new residential premises'?" ControlWidth="0" DefaultState="optional" ID="56a06bc7-8d27-4fe0-892a-c3177e505e0d" />
+        <LabelControl TextStyle="Normal" Caption="&quot;New residential premises&quot; is defined as premises that have not previously been sold as residential premises. &lt;i&gt; s 40-75(1)(a)) &lt;/i&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;This is further defined in section 195-1 as refering to land or buildings that is occupied as a residence or is intended to be, and is capable of being, occupied as a residence. Because of the defintion, for land to be residential presmises, there must be abuilding on the land that has the physical characteristics of a residence. Vacant land, of itself, can never have sufficient physical attributes to characterise it as being able to be, or intended to be occupied as a residence.&#xD;&#xA;&lt;i&gt; Goods and Services Tax Ruling GSTR 2003/3 para 26-31&lt;/i&gt;" ControlWidth="0" DefaultState="enabled" ID="9e576755-90a1-48c1-942d-18bef44e91ea">
+          <HideIfExpr ExprType="Unless" Op="==" Attribute="8966782b-6acc-4088-a2ea-2ff45216d2ab">
+            <Values>
+              <uncertain-val />
+            </Values>
+          </HideIfExpr>
+        </LabelControl>
         <LabelControl TextStyle="Normal" Caption="&lt;h3&gt;Exception&lt;/h3&gt;" ControlWidth="0" DefaultState="enabled" ID="7b9fb89b-607f-40be-81ee-ecf3e5280ccf" />
         <AttributeInputControl Attribute="4080f6e1-06f0-4bbe-a998-2132fbc4a6dd" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="b7f0e38f-4151-41cc-bc3e-2016f7797263" />
         <AttributeInputControl Attribute="95cab034-4430-490c-99c8-0ac97154a7ab" IsPassword="false" MinuteIncrement="1" SecondIncrement="1" YearStart="0" YearEnd="-100" HideCaption="false" ButtonHorizontalLayout="true" SortListAlphabetically="false" InputStyle="Radiobutton" HintText="" ControlWidth="0" DefaultState="enabled" ID="a53b2dd1-7663-402e-aef0-e56df66a552e" />
